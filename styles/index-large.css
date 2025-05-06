@@ -1,0 +1,17 @@
+/* Checked media query and it seems ok; check against rubric later */
+@media (min-width: 800px) {
+    header img {
+        border-radius: 50%;
+        width: 150px;
+    }
+
+    header span {
+        font-size: 3rem;
+        margin: 0 auto;
+
+    }
+
+    header {
+        text-align: center;
+    }
+}

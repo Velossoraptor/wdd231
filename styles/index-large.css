@@ -14,6 +14,10 @@
         display: flex;
     }
 
+    #hamburger {
+        display: none;
+    }
+
     #wrapper {
         padding: 10px;
         display: inline-flex;
@@ -36,6 +40,7 @@
     nav {
         margin: 0;
         display: flex;
+        flex-direction: row;
         align-items: center;
         align-content: center;
         justify-content: space-around;
@@ -54,6 +59,7 @@
 
     nav a:hover {
         background-color: rgb(229, 127, 127);
+        cursor: pointer;
     }
 
     /* Main Body of Page */
@@ -63,8 +69,6 @@
         background-color: aliceblue;
         display: inline-block;
         width: auto;
-        margin-left: 10px;
-        margin-right: 10px;
         border: solid 1px rgb(80, 40, 40);
         border-radius: 10px;
         max-height: fit-content;
@@ -74,8 +78,9 @@
         width: 60%;
     }
 
-    #location{
+    #location {
         width: 35%;
+        margin-top: 0;
     }
 
     #certificate {
@@ -85,6 +90,7 @@
 
     #top-row {
         display: flex;
+        justify-content: space-between;
     }
 
     section h2 {
@@ -112,8 +118,60 @@
         text-align: center;
     }
 
+    .sort-buttons {
+        display: flex;
+        justify-content: space-around;
+        background-color: slategrey;
+    }
+
+    .filter {
+        background:none; 
+        border-style: none;
+        padding: 1%;
+        width: 33%;
+        color: white;
+    }
+
+    .filter:hover {
+        background: 1px rgb(130, 70, 70);
+        color: white;
+        padding: 1%;
+        width: 33%;
+        cursor: pointer;
+    }
+
+    .course-names {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 3%;
+        justify-content: center;
+        text-align: center;
+        overflow: visible;
+    }
+
+    .complete, .incomplete {
+        border-radius: 10px;
+        font-size: 1.5rem;
+        width: auto;
+        padding: 1%
+    }
+
+    .complete {
+        background-color: rgb(247, 157, 157);
+    }
+
+    .incomplete {
+        background-color: slategrey;
+    }
+
     /* Bottom of Page */
     footer {
         text-align: center;
+        background-color: slategrey;
+        color: white;
+    }
+
+    footer p {
+        padding: 1%;
     }
 }

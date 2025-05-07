@@ -1,3 +1,197 @@
-h1 {
-    color: black;
-}
+    /* Top of page */
+    .container {
+        width: 70vw;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+
+    header {
+        background-color: slategray;
+        justify-content: space-around;
+        display: flex;
+    }
+
+    #hamburger {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        display: block;
+        cursor: pointer;
+    }
+    
+    #hamburger::before {
+        content: "☰";
+        color: black;
+    }
+    
+    #hamburger.open::before {
+        content: "❌";
+    }
+
+    .open a {
+        display: block;
+    }
+
+    #wrapper {
+        padding: 10px;
+        display: inline-flex;
+        align-items: center;
+        gap: 2rem;
+        margin: 0 auto;
+    }
+
+    header img {
+        border-radius: 50%;
+        width: 150px;
+        vertical-align: middle;
+    }
+
+    #title {
+        font-size: 3rem;
+        color: white;
+    }
+
+    nav {
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        list-style: none;
+        background-color: rgb(247, 157, 157);
+    }
+    
+    nav a {
+        display: none;
+        text-align: center;
+        color: rgb(105, 24, 42);
+        text-decoration: none;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 10px;
+        width: 90%;
+    }
+    
+    nav a:hover {
+        background-color: rgb(72, 11, 11);
+    }
+
+    /* Main Body of Page */
+
+    section {
+        border-radius: 10px;
+        background-color: aliceblue;
+        display: inline-block;
+        width: auto;
+        border: solid 1px rgb(80, 40, 40);
+        border-radius: 10px;
+        max-height: fit-content;
+    }
+
+    #course-work {
+        width: 100%;
+    }
+
+    #location {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    #certificate {
+        width: 100%;
+        margin-top: 10%;
+        height: auto;
+    }
+
+    #top-row {
+        display: block;
+        justify-content: space-between;
+    }
+
+    section h2 {
+        background-color: rgb(247, 157, 157);
+        color: white;
+        padding: 10px;
+        padding-top: 10px;
+        margin-top: 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        text-align: center;
+        height: auto;
+    }
+
+    #country-img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .img-holder {
+        padding: 1%;
+    }
+
+    figcaption {
+        text-align: center;
+    }
+
+    .sort-buttons {
+        display: flex;
+        justify-content: space-around;
+        background-color: slategrey;
+    }
+
+    .filter {
+        background:none; 
+        border-style: none;
+        padding: 1%;
+        width: 33%;
+        color: white;
+    }
+
+    .filter:hover {
+        background: 1px rgb(130, 70, 70);
+        color: white;
+        padding: 1%;
+        width: 33%;
+        cursor: pointer;
+    }
+
+    .course-names {
+        display: grid;
+        grid-template-columns: 90%;
+        grid-gap: 3%;
+        justify-content: center;
+        text-align: center;
+        overflow: scroll;
+    }
+
+    .complete, .incomplete {
+        border-radius: 10px;
+        font-size: 1.5rem;
+        width: auto;
+        padding: 1%
+    }
+
+    .complete {
+        background-color: rgb(247, 157, 157);
+    }
+
+    .incomplete {
+        background-color: slategrey;
+    }
+
+    /* Bottom of Page */
+    footer {
+        text-align: center;
+        background-color: slategrey;
+        color: white;
+    }
+
+    footer p {
+        padding: 1%;
+    }

@@ -8,6 +8,9 @@
     <meta author="Talia Olsen">
     <title>WDD 231 Home Page - Talia Olsen</title>
 
+    <script src="scripts/index-js.js" defer></script>
+
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index-small.css">
     <link rel="stylesheet" href="styles/index-large.css">
 </head>
@@ -17,7 +20,8 @@
         <header>
             <div id="wrapper">
                 <div id="pfp">
-                    <img src="/images/Easter-Spring 2025.png" id="pfp">
+                    <img src="/images/Easter-Spring 2025.png" id="pfp"
+                        alt="An illustration of a girl wearing bunny ears, holding icecream, on a festive spring background.">
                 </div>
                 <span id="title">Talia Olsen - WDD 231</span>
             </div>
@@ -31,13 +35,27 @@
         </nav>
         <main>
             <h1>Home</h1>
-            <section>
-                <h2>Course Work</h2>
-            </section>
-            <section>
-                <h2>Ontario, Canada</h2>
-            </section>
-            <section>
+            <div id="top-row">
+                <section id="course-work">
+                    <h2>Course Work</h2>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </section>
+                <section id="location">
+                    <h2>Ontario, Canada</h2>
+                    <div class="img-holder">
+                        <figure>
+                            <img src="images/pexels-souvenirpixels-1519088.jpg" id="country-img"
+                                alt="an image of the CN tower in Toronto, with colorful lights.">
+                            <figcaption>Toronto, Ontario</figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+            <section id="certificate">
                 <h2>Web and Computer Programming Certificate</h2>
             </section>
         </main>

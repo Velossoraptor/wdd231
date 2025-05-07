@@ -1,8 +1,8 @@
     /* Top of page */
     .container {
-        width: 70vw;
-        margin-left: 15vw;
-        margin-right: 15vw;
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
 
     header {
@@ -46,12 +46,12 @@
 
     header img {
         border-radius: 50%;
-        width: 150px;
+        width: 100px;
         vertical-align: middle;
     }
 
     #title {
-        font-size: 3rem;
+        font-size: 1.5rem;
         color: white;
     }
 

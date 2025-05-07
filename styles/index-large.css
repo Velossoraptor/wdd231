@@ -3,15 +3,30 @@
     header img {
         border-radius: 50%;
         width: 150px;
+        vertical-align: middle;
     }
 
-    header span {
-        font-size: 3rem;
+    #wrapper {
+        padding: 10px;
+        display: inline-flex;
+        align-items: center;
+        gap: 2rem;
         margin: 0 auto;
+    }
 
+    #title {
+        font-size: 3rem;
     }
 
     header {
-        text-align: center;
+        background-color: slategray;
+        justify-content: space-around;
+        display: flex;
+    }
+
+    .container {
+        width: 70vw;
+        margin-left: 15vw;
+        margin-right: 15vw;
     }
 }

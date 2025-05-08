@@ -3,6 +3,7 @@ const lastModified = document.querySelector("#lastModified");
 const today = new Date();
 const hamButton = document.querySelector('#hamburger');
 const navigation = document.querySelector('nav');
+const numCredits = document.querySelector('#course-num');
 
 currentyear.innerHTML = today.getFullYear();
 lastModified.innerHTML = `Last Modified: ${document.lastModified}`;
@@ -13,13 +14,17 @@ hamButton.addEventListener('click', () => {
 });
 
 const courses = [
-    {courseCode: 'CSE', number: 110, class: 'complete'},
-    {courseCode: 'CSE', number: 111, class: 'complete'},
-    {courseCode: 'CSE', number: 210, class: 'complete'},
-    {courseCode: 'WDD', number: 130, class: 'complete'},
-    {courseCode: 'WDD', number: 131, class: 'complete'},
-    {courseCode: 'WDD', number: 231, class: 'incomplete'}
+    {courseCode: 'CSE', number: 110, class: 'complete', credits: 2},
+    {courseCode: 'CSE', number: 111, class: 'complete', credits: 2},
+    {courseCode: 'CSE', number: 210, class: 'complete', credits: 2},
+    {courseCode: 'WDD', number: 130, class: 'complete', credits: 2},
+    {courseCode: 'WDD', number: 131, class: 'complete', credits: 2},
+    {courseCode: 'WDD', number: 231, class: 'incomplete', credits: 2}
 ]
+
+function addCredits(x, y){
+    return x+y.credits;
+}
 
 function classCard(course){
     return `
@@ -33,18 +38,23 @@ function renderCourses(courses) {
 }
 
 renderCourses(courses);
+numCredits.innerHTML = courses.reduce(addCredits, 0);
 
 const allLink = document.querySelector("#all");
 allLink.addEventListener("click", () => {
 	renderCourses(courses);
+    numCredits.innerHTML = courses.reduce(addCredits, 0);
 });
 
 const cseLink = document.querySelector("#CSE");
 cseLink.addEventListener("click", () => {
 	renderCourses(courses.filter(course => course.courseCode == 'CSE'));
+    numCredits.innerHTML = courses.filter(course => course.courseCode == 'CSE').reduce(addCredits, 0);
 });
 
 const wddLink = document.querySelector("#WDD");
 wddLink.addEventListener("click", () => {
 	renderCourses(courses.filter(course => course.courseCode == 'WDD'));
+    numCredits.innerHTML = courses.filter(course => course.courseCode == 'WDD').reduce(addCredits, 0);
 });
+

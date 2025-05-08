@@ -95,7 +95,7 @@
 
     section h2 {
         background-color: rgb(247, 157, 157);
-        color: white;
+        color: rgb(72, 11, 11);
         padding: 10px;
         padding-top: 10px;
         margin-top: 0;
@@ -162,6 +162,7 @@
 
     .incomplete {
         background-color: slategrey;
+        color: white;
     }
 
     /* Bottom of Page */

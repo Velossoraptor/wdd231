@@ -6,7 +6,7 @@
     }
 
     header {
-        background-color: slategray;
+        background-color: rgb(94, 107, 121);;
         justify-content: space-around;
         display: flex;
     }
@@ -83,6 +83,9 @@
         color: white;
     }
 
+    .active {
+        color: rgb(37, 54, 37);
+    }
     /* Main Body of Page */
 
     section {
@@ -144,7 +147,7 @@
     .sort-buttons {
         display: flex;
         justify-content: space-around;
-        background-color: slategrey;
+        background-color: rgb(94, 107, 121);;
     }
 
     .filter {
@@ -184,13 +187,13 @@
     }
 
     .incomplete {
-        background-color: slategrey;
+        background-color: rgb(94, 107, 121);;
     }
 
     /* Bottom of Page */
     footer {
         text-align: center;
-        background-color: slategrey;
+        background-color: rgb(94, 107, 121);;
         color: white;
     }
 

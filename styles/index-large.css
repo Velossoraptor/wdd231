@@ -9,7 +9,7 @@
     }
 
     header {
-        background-color: slategray;
+        background-color: rgb(94, 107, 121);;
         justify-content: space-around;
         display: flex;
     }
@@ -59,6 +59,7 @@
 
     nav a:hover {
         background-color: rgb(229, 127, 127);
+        color: rgb(105, 24, 42);
         cursor: pointer;
     }
 
@@ -121,7 +122,7 @@
     .sort-buttons {
         display: flex;
         justify-content: space-around;
-        background-color: slategrey;
+        background-color: rgb(94, 107, 121);;
     }
 
     .filter {
@@ -161,14 +162,14 @@
     }
 
     .incomplete {
-        background-color: slategrey;
+        background-color: rgb(94, 107, 121);;
         color: white;
     }
 
     /* Bottom of Page */
     footer {
         text-align: center;
-        background-color: slategrey;
+        background-color: rgb(94, 107, 121);;
         color: white;
     }
 

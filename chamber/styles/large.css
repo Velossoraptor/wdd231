@@ -1,0 +1,18 @@
+@media (min-width: 800px) {
+
+    #hamburger {
+        display: none;
+    }
+
+    #nav-container {
+        align-content: end;
+        padding-right: 10%;
+    }
+    
+    nav {
+        text-align: end;
+        margin: 0;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+}

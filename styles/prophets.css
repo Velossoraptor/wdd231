@@ -1,0 +1,26 @@
+*{
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+h1, h2, p {
+    color: rgb(38, 38, 50);
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+}
+
+section{
+    text-align: center;
+    background-color: rgb(184, 202, 222);
+    border: solid rgb(122, 137, 154);
+    box-shadow: 5px 5px 5px 5px rgba(112, 128, 144, 0.572);
+}
+
+section img {
+    width: 66%;
+    height: auto;
+}

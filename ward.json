@@ -1,0 +1,28 @@
+{
+    "family_name":"Olsens",
+    "move_in_date": "2021-09-01",
+    "number_of_people": 4,
+    "visited_by_bishopbric": true,
+    "family_members": [
+        {
+            "name": "Kenneth",
+            "gender": "male",
+            "birthdate": "1982-03-27"
+        },
+        {
+            "name":"Heather",
+            "gender":"female",
+            "birthdate": "1982-02-06"
+        },
+        {
+            "name":"Talia",
+            "gender":"female",
+            "birthdate": "2006-01-31"
+        },
+        {
+            "name":"Katrina",
+            "gender":"female",
+            "birthdate": "2008-12-02"
+        }
+    ]
+}

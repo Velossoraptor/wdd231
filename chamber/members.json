@@ -3,58 +3,65 @@
         {
             "name":"Kingston Bucket List",
             "address":"Kingston, Ontario",
-            "phone": "226-666-6666",
+            "phone": "613-666-6666",
+            "email": "kingstonbucketlist@gmail.com",
             "url": "https://kingstonbucketlist.blogspot.com",
             "imageurl": "https://blogger.googleusercontent.com/img/a/AVvXsEhXx-PsYyy0Niim6H2gNq8xAyTm6PCXX4lGbEqn-yxwQvYpjRUR8SqO7RGM0uepuHZ4Va-GEh-k_C-DonrZjFXKnVSWv2YbF-ljlD9dCs6b1zO7eUnVYa85Lou0Qld0n3iaz9Poyd6Sv0Wv4W4cx8Scb83IBoZ2N9H246C6EUcT8kEcoMu9JjE7Fy8YZbA=s320",
             "level": 3
         },
         {
-            "name":"Kingston Bucket List",
-            "address":"Kingston, Ontario",
-            "phone": "226-666-6666",
+            "name":"Mio Gelato",
+            "address":"178 Ontario Street Kingston, ON",
+            "phone": "613-547-4053",
+            "email": "katie@miogelato.ca",
             "url": "https://kingstonbucketlist.blogspot.com",
-            "imageurl": "https://blogger.googleusercontent.com/img/a/AVvXsEhXx-PsYyy0Niim6H2gNq8xAyTm6PCXX4lGbEqn-yxwQvYpjRUR8SqO7RGM0uepuHZ4Va-GEh-k_C-DonrZjFXKnVSWv2YbF-ljlD9dCs6b1zO7eUnVYa85Lou0Qld0n3iaz9Poyd6Sv0Wv4W4cx8Scb83IBoZ2N9H246C6EUcT8kEcoMu9JjE7Fy8YZbA=s320",
+            "imageurl": "https://lirp.cdn-website.com/535cd1be/dms3rep/multi/opt/logo-640w.jpg",
+            "level": 1
+        },
+        {
+            "name":"Wooden Heads",
+            "address":"192 Ontario St, Kingston, ON",
+            "phone": "613-549-1812",
+            "email": "kingstonbucketlist@gmail.com",
+            "url": "https://www.woodenheads.com",
+            "imageurl": "https://www.woodenheads.com/wp-content/uploads/2024/11/logo-m.png",
+            "level": 2
+        },
+        {
+            "name":"Canoil",
+            "address":"991 John F. Scott Road, Kingston, ON",
+            "phone": "613-555-5555",
+            "email": "sales@cancoil.com",
+            "url": "https://www.cancoil.com",
+            "imageurl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/7e3f5e20895adbb66ff472f4234b38af",
             "level": 3
         },
         {
-            "name":"Kingston Bucket List",
-            "address":"Kingston, Ontario",
-            "phone": "226-666-6666",
-            "url": "https://kingstonbucketlist.blogspot.com",
-            "imageurl": "https://blogger.googleusercontent.com/img/a/AVvXsEhXx-PsYyy0Niim6H2gNq8xAyTm6PCXX4lGbEqn-yxwQvYpjRUR8SqO7RGM0uepuHZ4Va-GEh-k_C-DonrZjFXKnVSWv2YbF-ljlD9dCs6b1zO7eUnVYa85Lou0Qld0n3iaz9Poyd6Sv0Wv4W4cx8Scb83IBoZ2N9H246C6EUcT8kEcoMu9JjE7Fy8YZbA=s320",
-            "level": 3
+            "name":"Home Depot",
+            "address":"606 Gardiners Rd, Kingston, ON",
+            "phone": "613-384-3511",
+            "email": "Homedepot@gmail.com",
+            "url": "https://www.homedepot.ca/en/home.html",
+            "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxt46-qyLixUksLTQprXoZk4p1xXKNHSTtHw&s",
+            "level": 2
         },
         {
-            "name":"Kingston Bucket List",
-            "address":"Kingston, Ontario",
-            "phone": "226-666-6666",
-            "url": "https://kingstonbucketlist.blogspot.com",
-            "imageurl": "https://blogger.googleusercontent.com/img/a/AVvXsEhXx-PsYyy0Niim6H2gNq8xAyTm6PCXX4lGbEqn-yxwQvYpjRUR8SqO7RGM0uepuHZ4Va-GEh-k_C-DonrZjFXKnVSWv2YbF-ljlD9dCs6b1zO7eUnVYa85Lou0Qld0n3iaz9Poyd6Sv0Wv4W4cx8Scb83IBoZ2N9H246C6EUcT8kEcoMu9JjE7Fy8YZbA=s320",
-            "level": 3
+            "name":"RONA",
+            "address":"2342 Princess St, Kingston, ON",
+            "phone": "613-531-6225",
+            "email": "kingstonbucketlist@gmail.com",
+            "url": "https://www.rona.ca/en",
+            "imageurl": "https://www.rona.ca/wcsstore/RONAStorefrontAssetStore/images/icons/icon_rona-192.png",
+            "level": 1
         },
         {
-            "name":"Kingston Bucket List",
-            "address":"Kingston, Ontario",
-            "phone": "226-666-6666",
-            "url": "https://kingstonbucketlist.blogspot.com",
-            "imageurl": "https://blogger.googleusercontent.com/img/a/AVvXsEhXx-PsYyy0Niim6H2gNq8xAyTm6PCXX4lGbEqn-yxwQvYpjRUR8SqO7RGM0uepuHZ4Va-GEh-k_C-DonrZjFXKnVSWv2YbF-ljlD9dCs6b1zO7eUnVYa85Lou0Qld0n3iaz9Poyd6Sv0Wv4W4cx8Scb83IBoZ2N9H246C6EUcT8kEcoMu9JjE7Fy8YZbA=s320",
-            "level": 3
-        },
-        {
-            "name":"Kingston Bucket List",
-            "address":"Kingston, Ontario",
-            "phone": "226-666-6666",
-            "url": "https://kingstonbucketlist.blogspot.com",
-            "imageurl": "https://blogger.googleusercontent.com/img/a/AVvXsEhXx-PsYyy0Niim6H2gNq8xAyTm6PCXX4lGbEqn-yxwQvYpjRUR8SqO7RGM0uepuHZ4Va-GEh-k_C-DonrZjFXKnVSWv2YbF-ljlD9dCs6b1zO7eUnVYa85Lou0Qld0n3iaz9Poyd6Sv0Wv4W4cx8Scb83IBoZ2N9H246C6EUcT8kEcoMu9JjE7Fy8YZbA=s320",
-            "level": 3
-        },
-        {
-            "name":"Kingston Bucket List",
-            "address":"Kingston, Ontario",
-            "phone": "226-666-6666",
-            "url": "https://kingstonbucketlist.blogspot.com",
-            "imageurl": "https://blogger.googleusercontent.com/img/a/AVvXsEhXx-PsYyy0Niim6H2gNq8xAyTm6PCXX4lGbEqn-yxwQvYpjRUR8SqO7RGM0uepuHZ4Va-GEh-k_C-DonrZjFXKnVSWv2YbF-ljlD9dCs6b1zO7eUnVYa85Lou0Qld0n3iaz9Poyd6Sv0Wv4W4cx8Scb83IBoZ2N9H246C6EUcT8kEcoMu9JjE7Fy8YZbA=s320",
-            "level": 3
+            "name":"Glenburnie Grocery",
+            "address":"2454 Perth Rd, Glenburnie, ON",
+            "phone": "613-542-6234",
+            "email": "Glenburniegrocery@gmail.com",
+            "url": "https://glenburniegrocery.ca",
+            "imageurl": "https://glenburniegrocery.ca/wp-content/uploads/2023/04/Picture1.png",
+            "level": 1
         }
     ]
 }

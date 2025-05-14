@@ -28,7 +28,7 @@ const displayMembers = (members) => {
     members.forEach((member) =>{
         let card = document.createElement('section');
         let name = document.createElement('h2');
-        let tag = document.createElement('p');
+        let address = document.createElement('p');
 		let logo = document.createElement('img');
         let email = document.createElement('p');
         let phone = document.createElement('p');
@@ -36,21 +36,21 @@ const displayMembers = (members) => {
 
         name.textContent = `${member.name}`;
 
-        tag.textContent = `${member.tag}`;
+        address.textContent = `${member.address}`;
 
         logo.setAttribute('src', member.imageurl);
         logo.setAttribute('alt', `The logo of ${member.name}`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '150');
 
-		email.textContent = `${member.email}`;
-		phone.textContent = `${member.phone}`;
+		email.innerHTML = `<b>Email:</b> ${member.email}`;
+		phone.innerHTML = `<b>Phone:</b>${member.phone}`;
 
 		url.setAttribute('href', `${member.url}`);
-		url.textContent = `${member.name}`;
+		url.innerHTML = `<b>URL:</b> ${member.name}`;
 
         card.appendChild(name);
-        card.appendChild(tag);
+        card.appendChild(address);
         card.appendChild(logo);
         card.appendChild(email);
 		card.appendChild(phone);

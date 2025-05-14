@@ -27,12 +27,19 @@ getMemberData();
 const displayMembers = (members) => {
     members.forEach((member) =>{
         let card = document.createElement('section');
+		let nameDiv = document.createElement('div');
+		let contentDiv = document.createElement('div');
+		let textDiv = document.createElement('div');
         let name = document.createElement('h2');
         let address = document.createElement('p');
 		let logo = document.createElement('img');
         let email = document.createElement('p');
         let phone = document.createElement('p');
 		let url = document.createElement('a');
+
+		nameDiv.setAttribute('id', 'card-header');
+		contentDiv.setAttribute('id', 'card-content');
+		textDiv.setAttribute('id', 'card-text');
 
         name.textContent = `${member.name}`;
 
@@ -41,20 +48,28 @@ const displayMembers = (members) => {
         logo.setAttribute('src', member.imageurl);
         logo.setAttribute('alt', `The logo of ${member.name}`);
         logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('width', '150');
+        logo.setAttribute('width', '100');
 
 		email.innerHTML = `<b>Email:</b> ${member.email}`;
 		phone.innerHTML = `<b>Phone:</b>${member.phone}`;
 
 		url.setAttribute('href', `${member.url}`);
-		url.innerHTML = `<b>URL:</b> ${member.name}`;
+		url.innerHTML = `<b>Link:</b> ${member.name}`;
 
-        card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(logo);
-        card.appendChild(email);
-		card.appendChild(phone);
-		card.appendChild(url);
+        nameDiv.appendChild(name);
+        nameDiv.appendChild(address);
+
+		contentDiv.appendChild(logo);
+        textDiv.appendChild(email);
+		textDiv.appendChild(phone);
+		textDiv.appendChild(url);
+	
+		contentDiv.appendChild(textDiv);
+
+		card.appendChild(nameDiv);
+		card.appendChild(contentDiv);
+        
+		
 
         memberCards.appendChild(card);
     });

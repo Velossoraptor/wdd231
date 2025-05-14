@@ -97,7 +97,65 @@ nav a:hover{
 .tab p{
     padding: 2.5%;
 }
+/* Member Cards */
+#members{
 
+}
+.member-cards {
+    margin-top: 5%;
+    justify-items: center;
+}
+
+.member-cards section{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .11);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 75%;
+    margin-top: 5%;
+}
+
+.member-cards #card-header {
+    background-color: rgb(98, 106, 173);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.member-cards #card-content {
+    display: inline-flex;
+    align-content: end;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.member-cards #card-content #card-text{
+    margin-left: 10px;
+}
+.member-cards #card-content #card-text a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.member-cards h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.member-cards #card-header p{
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.member-cards img {
+    border-radius: 50%;
+}
 
 /* Bottom */
 

@@ -2,6 +2,12 @@
     font-family: 'Roboto';
 }
 
+/* body{
+    background-color: rgb(235, 237, 241);
+} */
+
+/* Top */
+
 header {
     background-color: rgb(153, 204, 217);
     justify-content: space-between; 
@@ -20,7 +26,7 @@ header {
     margin-left: 2rem;
 }
 
-#wrapper span, p {
+#wrapper span, #wrapper p {
     text-align: end;
     padding-left: 1rem;
 }
@@ -44,6 +50,9 @@ nav a:hover{
     color: white;
 }
 
+/* Body */
+
+/* Top Image*/
 .container {
     width: 90vw;
     margin-left: 5vw;
@@ -64,4 +73,37 @@ nav a:hover{
     width: 100%;
     justify-content: center;
     object-fit: cover;
+}
+
+/* Tab Sections*/
+
+.tab{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .11);
+    height: 100%;
+}
+
+.tab h2 {
+    background-color: rgb(165, 66, 66);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    padding-top: 10px;
+    margin-top: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    height: auto;
+}
+
+.tab p{
+    padding: 2.5%;
+}
+
+
+/* Bottom */
+
+footer {
+    background-color: rgb(153, 204, 217);
+    text-align: center;
+    padding: .5rem;
+    margin-top: 5%;
 }

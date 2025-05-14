@@ -15,4 +15,12 @@
         padding: 1rem;
         margin-bottom: 1rem;
     }
+
+    .tab-container{
+        display: grid;
+        grid-template-columns: 45% 25% 25%;
+        grid-gap: 1%;
+        justify-content: center;
+    }
+    
 }

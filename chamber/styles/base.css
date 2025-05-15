@@ -11,17 +11,6 @@ header {
     display: flex;  
 }
 
-#desktop-nav {
-    display: none;
-}
-
-#mobile-nav {
-    display: flex;
-    background-color: rgb(153, 204, 217);
-    width: 100%;
-    margin: 0 auto;
-}
-
 /* Hamburger Settings */
 
 #hamburger {
@@ -45,29 +34,26 @@ header {
     content: "❌";
 }
 
-.open a {
-    display: block;
-}
-
-nav.open{
-    /* margin-right: 7vw; */
-    padding: 1rem;
-    /* background-color: orange; */
-}
-
 nav {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .5s ease-in-out;
     text-align: center;
-    align-items: center;
     align-content: center;
-    flex-direction: column;
-    list-style: none;
+}
+
+.nav-container {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#mobile-nav.open{
+    grid-template-rows: 1fr;
+    transition: grid-template-rows .5s ease-out;
 }
     
 nav a {
-    display: none;
+    display: block;
     text-align: center;
     color: black;
     text-decoration: none;
@@ -85,6 +71,14 @@ nav a:hover {
 
 .active {
     color: rgb(37, 54, 37);
+}
+
+#desktop-nav {
+    display: none;
+}
+
+#mobile-nav {
+    background-color: rgb(153, 204, 217);
 }
 
 /* Hamburger End */
@@ -249,6 +243,16 @@ nav a:hover {
     background: none;
     background-color: rgb(165, 66, 66) !important;
     border: solid rgb(87, 28, 28) !important;
+    color: white;
+}
+
+#list-toggle:hover {
+    background-color: black !important;
+    color: white;
+}
+
+.list-button:hover {
+    background-color: black;
     color: white;
 }
 

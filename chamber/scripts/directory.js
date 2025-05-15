@@ -107,7 +107,7 @@ function handleScreenChange(){
 
     if(sWidth<=800){
         // console.log('small');
-        heroImage.setAttribute('src', 'images/kingston-heroimage-mobile.webp');
+        heroImage.setAttribute('src', 'images/heroimage-mobile.webp');
     } else if(sWidth>800) {
         // console.log('large');
         heroImage.setAttribute('src', 'images/kingston-heroimage.webp');

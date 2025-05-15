@@ -11,6 +11,8 @@ const activeLink = document.querySelectorAll('.active');
 const memberCards = document.querySelector('.member-cards');
 const cardList = document.querySelectorAll('.card');
 
+const heroImage = document.querySelector('#hero');
+
 // activeLink.innerHTML = `🦕${activeLink.innerHTML}`;
 activeLink.forEach(link => {
     link.innerHTML = `🦕${link.innerHTML}`;
@@ -72,6 +74,7 @@ const displayMembers = (members) => {
         logo.setAttribute('alt', `The logo of ${member.name}`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '100');
+        logo.setAttribute('height', 'auto');
 
         email.innerHTML = `<b>Email:</b> ${member.email}`;
         phone.innerHTML = `<b>Phone:</b>${member.phone}`;
@@ -99,3 +102,19 @@ const displayMembers = (members) => {
         memberCards.appendChild(card);
     });
 };
+
+function handleScreenChange(){
+    const sWidth = window.innerWidth;
+
+    if(sWidth<=800){
+        // console.log('small');
+        heroImage.setAttribute('src', 'images/kingston-heroimage-mobile.jpg');
+    } else if(sWidth>800) {
+        // console.log('large');
+        heroImage.setAttribute('src', 'images/kingston-heroimage.jpg');
+    }
+};
+
+handleScreenChange();
+
+window.addEventListener('resize', handleScreenChange);

@@ -17,25 +17,28 @@
 
     <script src="scripts/directory.js" defer></script>
 
-    <link rel="stylesheet" href="../styles/normalize.css" media="screen">
+    <!-- <link rel="stylesheet" href="../styles/normalize.css" media="screen"> -->
     <link rel="stylesheet" href="styles/base.css" media="screen">
     <link rel="stylesheet" href="styles/large.css" media="screen">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" media="screen">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin  media="screen">
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet"  media="screen">
-    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet"  media="screen">
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+        rel="preload stylesheet" as="style" media="screen">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet"  media="screen" defer> -->
 
     <link rel="icon" href="images/favicon-chamber.ico">
+
+    <link rel="preload" fetchpriority="high" as="image" href="images/kingston-heroimage-mobile.webp" type="image/webp">
+    <link rel="preload" fetchpriority="high" as="image" href="images/kingston-heroimage.webp" type="image/webp">
 </head>
 
 <body>
         <header>
             <button id="hamburger" aria-label="hamburger menu toggle"></button>
             <div id="wrapper">
-                <img src="images/kingston-header.jpg"
+                <img src="images/kingston-header-optimized.webp"
                     alt="An illustration of the kingston ontario government logo.">
                 <div id="title">
                     <span>Kingston</span>
@@ -65,7 +68,7 @@
         <main>
             <div class="container">
                 <div id="hero-container">
-                    <img src="images/kingston-heroimage.jpg" alt="an image of a harbor in kingston ontario, with an old bunker." id="hero" loading="eager">
+                    <img src="images/kingston-heroimage.webp" alt="an image of a harbor in kingston ontario, with an old bunker." id="hero" loading="eager">
                 </div>
                 <h1>Home</h1>
                 <div class="tab-container">

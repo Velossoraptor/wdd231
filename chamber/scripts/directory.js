@@ -13,7 +13,6 @@ const cardList = document.querySelectorAll('.card');
 
 const heroImage = document.querySelector('#hero');
 
-// activeLink.innerHTML = `🦕${activeLink.innerHTML}`;
 activeLink.forEach(link => {
     link.innerHTML = `🦕${link.innerHTML}`;
     link.setAttribute('color', 'black');
@@ -108,10 +107,10 @@ function handleScreenChange(){
 
     if(sWidth<=800){
         // console.log('small');
-        heroImage.setAttribute('src', 'images/kingston-heroimage-mobile.jpg');
+        heroImage.setAttribute('src', 'images/kingston-heroimage-mobile.webp');
     } else if(sWidth>800) {
         // console.log('large');
-        heroImage.setAttribute('src', 'images/kingston-heroimage.jpg');
+        heroImage.setAttribute('src', 'images/kingston-heroimage.webp');
     }
 };
 

@@ -42,8 +42,8 @@
                     <p>Chamber of Commerce</p>
                 </div>
             </div>
-            <div id="nav-container">
-                <nav>
+            <div class="nav-container">
+                <nav id="desktop-nav">
                     <a href="/index.html">Home</a>
                     <a href="/chamber/directory.html" class="active">Chamber</a>
                     <a href="#">Join</a>
@@ -51,6 +51,16 @@
                 </nav>
             </div>
         </header>
+
+        <nav id="mobile-nav">
+            <div class="nav-container">
+                <a href="/index.html">Home</a>
+                <a href="/chamber/directory.html" class="active">Chamber</a>
+                <a href="#">Join</a>
+                <a href="#">Discover</a>
+            </div>
+            
+        </nav>
 
         <main>
             <div class="container">
@@ -72,10 +82,8 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eos consequuntur minus unde omnis quia placeat velit natus dolor consequatur.</p>
                     </div>
                 </div>
-                <!-- <section id="members"> -->
-                    <div class="member-cards">
-                    </div>
-                <!-- </section> -->
+                <div><button id="list-toggle" aria-label="List view toggle">Simple List</button></div>
+                <div class="member-cards"></div>
             </div>
         </main>
         <footer>

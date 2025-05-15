@@ -2,9 +2,6 @@
     font-family: 'Roboto';
 }
 
-/* body{
-    background-color: rgb(235, 237, 241);
-} */
 
 /* Top */
 
@@ -13,6 +10,84 @@ header {
     justify-content: space-between; 
     display: flex;  
 }
+
+#desktop-nav {
+    display: none;
+}
+
+#mobile-nav {
+    display: flex;
+    background-color: rgb(153, 204, 217);
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Hamburger Settings */
+
+#hamburger {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: block;
+    cursor: pointer;
+}
+   
+#hamburger::before {
+    content: "☰";
+    color: black;
+}
+    
+#hamburger.open::before {
+    content: "❌";
+}
+
+.open a {
+    display: block;
+}
+
+nav.open{
+    /* margin-right: 7vw; */
+    padding: 1rem;
+    /* background-color: orange; */
+}
+
+nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    list-style: none;
+}
+    
+nav a {
+    display: none;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    width: 90%;
+    justify-content: space-around;
+}
+    
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.216);
+    color: white;
+}
+
+.active {
+    color: rgb(37, 54, 37);
+}
+
+/* Hamburger End */
 
 #wrapper{
     display: inline-flex;
@@ -35,20 +110,7 @@ header {
     font-size: 2rem;
 }
 
-nav a {
-    text-decoration: none;
-    text-align: center;
-    padding: 1rem;
-    font-size: 1.2rem;
-    color: black;
-    margin: 0;
-    width: 100%;
-}
 
-nav a:hover{
-    background-color: rgba(0, 0, 0, 0.216);
-    color: white;
-}
 
 /* Body */
 
@@ -97,12 +159,11 @@ nav a:hover{
 .tab p{
     padding: 2.5%;
 }
-/* Member Cards */
-#members{
 
-}
+/* Member Cards */
+
 .member-cards {
-    margin-top: 5%;
+    /* margin-top: 5%; */
     justify-items: center;
 }
 
@@ -155,6 +216,40 @@ nav a:hover{
 
 .member-cards img {
     border-radius: 50%;
+}
+
+/* List Layout */
+
+#list-toggle { /* Button Class for List */
+    background: none;
+    background-color: rgb(153, 204, 217);
+    border: solid rgb(68, 101, 109);
+    border-radius: 10%;
+    margin-top: 5%;
+}
+
+.list { /* Changes from grid display to block */
+    display: block !important;
+}
+
+.list img { /* Removes the image from the display */
+    display: none;
+}
+
+.member-cards.list section{ /* Adds border to section in list format */
+    border: solid rgba(0, 0, 0, 0.39);
+    border-radius: 8px;
+}
+
+.member-cards.list section #card-header{ /* Adds border to heading in list format */
+    border-bottom: solid rgba(0, 0, 0, 0.39);
+}
+
+.list-button{ /*Changed the button look when toggled*/
+    background: none;
+    background-color: rgb(165, 66, 66) !important;
+    border: solid rgb(87, 28, 28) !important;
+    color: white;
 }
 
 /* Bottom */

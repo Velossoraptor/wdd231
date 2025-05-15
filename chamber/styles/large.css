@@ -4,18 +4,44 @@
         display: none;
     }
 
-    #nav-container {
+    .nav-container {
         align-content: end;
         padding-right: 10%;
     }
     
+
     nav {
-        text-align: end;
         margin: 0;
-        padding: 1rem;
-        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
     }
 
+    nav a {
+        white-space: nowrap;
+        text-decoration: none;
+        color: black;
+        display: block;
+        text-align:center;
+        padding: 20px;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    nav a:hover{
+        background-color: rgba(0, 0, 0, 0.216);
+        color: white;
+    }
+
+    #desktop-nav {
+        display: flex;
+    }
+
+    #mobile-nav {
+        display: none;
+    }
     .tab-container{
         display: grid;
         grid-template-columns: 45% 25% 25%;
@@ -54,7 +80,6 @@
         align-content: end;
         justify-content: space-around;
         width: 100%;
-        /* margin-bottom: 5%; */
     }
     
     .member-cards #card-content #card-text{
@@ -76,4 +101,8 @@
         padding: 0;
     }
     
+    .member-cards.list { /* Limits the width of the cards when in list mode to make it look nice */
+        width: 40%;
+        margin: 0 auto;
+    }
 }

@@ -17,21 +17,19 @@
 
     <script src="scripts/directory.js" defer></script>
 
-    <!-- <link rel="stylesheet" href="../styles/normalize.css" media="screen"> -->
-    <link rel="stylesheet" href="styles/base.css" media="screen">
-    <link rel="stylesheet" href="styles/large.css" media="screen">
-
     <link rel="preconnect" href="https://fonts.googleapis.com" media="screen">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin  media="screen">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
         rel="preload stylesheet" as="style" media="screen">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet"  media="screen" defer> -->
 
     <link rel="icon" href="images/favicon-chamber.ico">
 
-    <link rel="preload" fetchpriority="high" as="image" href="images/heroimage-mobile.webp" type="image/webp">
-    <link rel="preload" fetchpriority="high" as="image" href="images/kingston-heroimage.webp" type="image/webp">
+    <link rel="preload" fetchpriority="high" as="image" href="images/heroimage-mobile.webp" type="image/webp" media="(max-width: 800px)">
+    <link rel="preload" fetchpriority="high" as="image" href="images/kingston-heroimage.webp" type="image/webp" media="(min-width: 800px)">
+
+    <link rel="stylesheet" href="styles/base.css" media="screen">
+    <link rel="stylesheet" href="styles/large.css" media="screen">
 </head>
 
 <body>

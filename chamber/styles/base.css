@@ -127,8 +127,10 @@ nav a:hover {
 
 #hero {
     width: 100%;
+    height: 267px;
     justify-content: center;
     object-fit: cover;
+    display: none;
 }
 
 /* Tab Sections*/

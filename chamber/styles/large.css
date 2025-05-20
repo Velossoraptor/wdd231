@@ -43,6 +43,11 @@
         display: none;
     }
 
+    #hero-container{
+        height: 267px;
+        margin-bottom: 3vw;
+    }
+
     .tab-container{
         display: grid;
         grid-template-columns: 45% 25% 25%;

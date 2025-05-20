@@ -16,6 +16,7 @@
     <meta property="og:url" content="https://velossoraptor.github.io/wdd231/chamber/directory.html">
 
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.mjs" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" media="screen">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin  media="screen">
@@ -30,6 +31,7 @@
 
     <link rel="stylesheet" href="styles/base.css" media="screen">
     <link rel="stylesheet" href="styles/large.css" media="screen">
+    <link rel="stylesheet" href="styles/index.css" media="screen">
 </head>
 
 <body>
@@ -45,8 +47,8 @@
             </div>
             <div class="nav-container">
                 <nav id="desktop-nav">
-                    <a href="/chamber/index.html">Home</a>
-                    <a href="/chamber/directory.html" class="active">Directory</a>
+                    <a href="/chamber/index.html" class="active">Home</a>
+                    <a href="/chamber/directory.html">Directory</a>
                     <a href="#">Join</a>
                     <a href="#">Discover</a>
                 </nav>
@@ -55,8 +57,8 @@
 
         <nav id="mobile-nav">
             <ul class="nav-container">
-                <li><a href="/chamber/index.html">Home</a></li>
-                <li><a href="/chamber/directory.html" class="active">Directory</a></li>
+                <li><a href="/chamber/index.html" class="active">Home</a></li>
+                <li><a href="/chamber/directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
@@ -68,23 +70,30 @@
                 <div id="hero-container">
                     <img src="images/kingston-heroimage.webp" alt="an image of a harbor in kingston ontario, with an old bunker." id="hero" loading="eager">
                 </div>
+                <div class="join"><p>Join our Chamber of Commerce <br><a href="#">--> here! <--</a></p></div>
                 <h1>Home</h1>
+                
                 <div class="tab-container">
                     <div class="tab" id="events">
                         <h2>Events</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam blanditiis aperiam accusantium corporis voluptatem quod praesentium, a quo unde velit.</p>
                     </div>
-                    <div class="tab">
+                    <div class="tab" id="current-weather">
                         <h2>Current Weather</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim repellendus, quasi tempora maxime accusamus labore id perferendis porro hic facere.</p>
+                        <div>
+                            <h3 id="current-temp"></h3>
+                            <img src="" alt="" id="weather-icon">
+                            <figcaption></figcaption>
+                        </div>
                     </div>
-                    <div class="tab">
+                    <div class="tab" id="weather-forecast">
                         <h2>Weather Forecast</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eos consequuntur minus unde omnis quia placeat velit natus dolor consequatur.</p>
                     </div>
+                    <div class="tab" id="spotlights">
+                        <h2>Spotlights!</h2>
+                    </div>
                 </div>
-                <div><button id="list-toggle" aria-label="List view toggle">Simple List</button></div>
-                <div class="member-cards"></div>
             </div>
         </main>
         <footer>

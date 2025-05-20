@@ -2,7 +2,12 @@ const weatherImage = document.querySelector('#weather-icon');
 const currentTemp = document.querySelector('#current-temp');
 const captionDesc = document.querySelector('figcaption');
 
+const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+const forecastArray = document.querySelectorAll('.forecast-day');
+
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=44.24&lon=-76.49&units=metric&appid=0c061ab6f17b6094fcd82cba9e7fadad';
+const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=44.24&lon=-76.49&units=metric&appid=0c061ab6f17b6094fcd82cba9e7fadad';
 // 44.24316109887574, -76.4946130164592
 
 async function apiFetchCurrent() {
@@ -23,9 +28,9 @@ async function apiFetchCurrent() {
 }
 
 async function apiFetchForecast() {
-    if(weatherImage != null && currentTemp != null && captionDesc != null){
+    if(forecastArray != null){
         try {
-            const response = await fetch(url);
+            const response = await fetch(forecastUrl);
             if (response.ok) {
                 const data = await response.json();
                 displayResultsForecast(data);
@@ -49,12 +54,34 @@ function displayResults(data) {
 }
 
 function displayResultsForecast(data) {
-    currentTemp.innerHTML = `${data.name}, ${data.main.temp}&deg;C`;
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    let desc = data.weather[0].description;
-    weatherImage.setAttribute('src', iconsrc);
-    weatherImage.setAttribute('alt', desc);
-    captionDesc.textContent = `${toTitleCase(desc)}`;
+    console.log(data);
+    let tracker = 0;
+    forecastArray.forEach((day) => {
+        let date = document.createElement('p');
+        let temp = document.createElement('span');
+
+        if(tracker == 0){
+            date.innerHTML = '<b>Today<b>: ';
+            let dateData = data.list[tracker].dt_txt;
+            // console.log(dateData);
+            let dateTxt = new Date(dateData.split(" ")[0]);
+            console.log(dateTxt);
+        }else{
+            let dateData = data.list[tracker].dt_txt;
+            // console.log(dateData);
+            let dateTxt = new Date(dateData.split(" ")[0]);
+            console.log(dateTxt);
+            date.innerHTML = `${daysOfWeek[dateTxt.getUTCDay()]}: `;
+        }
+
+        temp.innerHTML = `${data.list[tracker].main.temp}&deg;C`;
+
+        date.appendChild(temp);
+        day.appendChild(date);
+        // day.appendChild(temp);
+        tracker = tracker+8;
+        console.log(tracker);
+    });
 }
 
 function toTitleCase(str) {
@@ -67,5 +94,5 @@ function toTitleCase(str) {
 }
 
 apiFetchCurrent();
-
+apiFetchForecast();
 // export default apiFetch;

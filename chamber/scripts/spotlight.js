@@ -35,6 +35,17 @@ const displaySortedMembers = (members) => {
         let email = document.createElement('p');
         let phone = document.createElement('p');
         let url = document.createElement('a');
+        let level = document.createElement('p');
+
+        if(member.level == 2){
+            level.textContent = `Silver Membership`;
+            level.style.backgroundColor ='#404c5e';
+        }else if(member.level ==3){
+            level.textContent = `Gold Membership`;
+            level.style.backgroundColor ='#8c6d1f';
+        }
+
+        level.style.color ='#ffffff';
 
         nameDiv.setAttribute('id', 'card-header');
         contentDiv.setAttribute('id', 'card-content');
@@ -63,11 +74,13 @@ const displaySortedMembers = (members) => {
         textDiv.appendChild(email);
         textDiv.appendChild(phone);
         textDiv.appendChild(url);
+        
 
         contentDiv.appendChild(textDiv);
 
         card.appendChild(nameDiv);
         card.appendChild(contentDiv);
+        card.appendChild(level);
 
         card.setAttribute('class', 'card');
 

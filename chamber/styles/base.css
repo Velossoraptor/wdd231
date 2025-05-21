@@ -157,6 +157,16 @@ nav a:hover {
 
 /* Member Cards */
 
+.card>p {
+    text-align: center;
+    padding: 2%;
+    margin: 0 auto;
+}
+
+/* .card div{
+    text-align: left;
+} */
+
 .member-cards, .spotlight-cards {
     /* margin-top: 5%; */
     justify-items: center;

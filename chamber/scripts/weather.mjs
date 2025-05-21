@@ -1,6 +1,6 @@
 const weatherImage = document.querySelector('#weather-icon');
 const currentTemp = document.querySelector('#current-temp');
-const captionDesc = document.querySelector('figcaption');
+const captionDesc = document.querySelector('#weather-caption');
 
 const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
@@ -54,7 +54,6 @@ function displayResults(data) {
 }
 
 function displayResultsForecast(data) {
-    // console.log(data);
     let tracker = 0;
     forecastArray.forEach((day) => {
         let date = document.createElement('p');
@@ -63,14 +62,10 @@ function displayResultsForecast(data) {
         if(tracker == 0){
             date.innerHTML = '<b>Today<b>: ';
             let dateData = data.list[tracker].dt_txt;
-            // console.log(dateData);
             let dateTxt = new Date(dateData.split(" ")[0]);
-            // console.log(dateTxt);
         }else{
             let dateData = data.list[tracker].dt_txt;
-            // console.log(dateData);
             let dateTxt = new Date(dateData.split(" ")[0]);
-            // console.log(dateTxt);
             date.innerHTML = `${daysOfWeek[dateTxt.getUTCDay()]}: `;
         }
 
@@ -78,9 +73,8 @@ function displayResultsForecast(data) {
 
         date.appendChild(temp);
         day.appendChild(date);
-        // day.appendChild(temp);
+
         tracker = tracker+8;
-        // console.log(tracker);
     });
 }
 
@@ -95,4 +89,3 @@ function toTitleCase(str) {
 
 apiFetchCurrent();
 apiFetchForecast();
-// export default apiFetch;

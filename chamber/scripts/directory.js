@@ -84,7 +84,7 @@ if (memberCards != null) {
             logo.setAttribute('height', 'auto');
 
             email.innerHTML = `<b>Email:</b> ${member.email}`;
-            phone.innerHTML = `<b>Phone:</b>${member.phone}`;
+            phone.innerHTML = `<b>Phone:</b> ${member.phone}`;
 
             url.setAttribute('href', `${member.url}`);
             url.innerHTML = `<b>Link:</b> ${member.name}`;

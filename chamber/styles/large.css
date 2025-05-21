@@ -57,7 +57,7 @@
     }
     
     
-    .member-cards {
+    .member-cards, .spotlight-cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(330px, 3fr));
         grid-template-rows: repeat(auto-fit, minmax(250px, 300px));
@@ -66,14 +66,14 @@
         margin-bottom: 10%;
     }
     
-    .member-cards section{
+    .member-cards section, .spotlight-cards section{
         box-shadow: 0 0 10px rgba(0, 0, 0, .11);
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
         width: 100%;
     }
     
-    .member-cards #card-header {
+    .member-cards #card-header, .spotlight-cards #card-header {
         background-color: rgb(56, 61, 105);
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
@@ -81,26 +81,27 @@
         margin-bottom: 2%;
     }
     
-    .member-cards #card-content {
+    .member-cards #card-content, .spotlight-cards #card-content {
         display: inline-flex;
         align-content: end;
         justify-content: space-around;
         width: 100%;
     }
     
-    .member-cards #card-content #card-text{
+    .member-cards #card-content #card-text, .spotlight-cards #card-content #card-text{
         margin-left: 10px;
     }
     
-    .member-cards h2{
+    .member-cards h2, .spotlight-cards h2{
         color: rgb(255, 255, 255);
         text-align: center;
         height: auto;
         margin: 0;
         padding: 0;
+        background-color: rgba(255, 255, 255, 0);
     }
     
-    .member-cards #card-header p{
+    .member-cards #card-header p, .spotlight-cards #card-header p{
         text-align: center;
         color: white;
         margin: 0;

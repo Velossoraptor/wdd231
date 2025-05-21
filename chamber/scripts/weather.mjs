@@ -54,7 +54,7 @@ function displayResults(data) {
 }
 
 function displayResultsForecast(data) {
-    console.log(data);
+    // console.log(data);
     let tracker = 0;
     forecastArray.forEach((day) => {
         let date = document.createElement('p');
@@ -65,12 +65,12 @@ function displayResultsForecast(data) {
             let dateData = data.list[tracker].dt_txt;
             // console.log(dateData);
             let dateTxt = new Date(dateData.split(" ")[0]);
-            console.log(dateTxt);
+            // console.log(dateTxt);
         }else{
             let dateData = data.list[tracker].dt_txt;
             // console.log(dateData);
             let dateTxt = new Date(dateData.split(" ")[0]);
-            console.log(dateTxt);
+            // console.log(dateTxt);
             date.innerHTML = `${daysOfWeek[dateTxt.getUTCDay()]}: `;
         }
 
@@ -80,7 +80,7 @@ function displayResultsForecast(data) {
         day.appendChild(date);
         // day.appendChild(temp);
         tracker = tracker+8;
-        console.log(tracker);
+        // console.log(tracker);
     });
 }
 

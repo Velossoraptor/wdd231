@@ -42,7 +42,7 @@ const displaySortedMembers = (members) => {
             level.style.backgroundColor ='#404c5e';
         }else if(member.level ==3){
             level.textContent = `Gold Membership`;
-            level.style.backgroundColor ='#8c6d1f';
+            level.style.backgroundColor ='#5c4815';
         }
 
         level.style.color ='#ffffff';

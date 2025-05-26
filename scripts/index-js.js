@@ -1,10 +1,15 @@
 const currentyear = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
 const today = new Date();
+
 const hamButton = document.querySelector('#hamburger');
 const navigation = document.querySelector('nav');
+
 const numCredits = document.querySelector('#course-num');
 const activeLink = document.querySelector('.active');
+
+const courseModal = document.querySelector("#course-details");
+
 
 activeLink.innerHTML = `🦕${activeLink.innerHTML}`;
 
@@ -103,12 +108,12 @@ function addCredits(x, y){
 function classCard(course){
     if (course.completed == true){
         return `
-        <p class="complete">${course.subject} ${course.number}</p>
+        <button class="complete" id="${courses.indexOf(course)}">${course.subject} ${course.number}</button>
         `
     }
     else {
         return `
-        <p class="incomplete">${course.subject} ${course.number}</p>
+        <button class="incomplete" id="${courses.indexOf(course)}">${course.subject} ${course.number}</nutton>
         `
     }
 }
@@ -138,3 +143,42 @@ wddLink.addEventListener("click", () => {
 	renderCourses(courses.filter(course => course.subject == 'WDD'));
     numCredits.innerHTML = courses.filter(course => course.subject == 'WDD').reduce(addCredits, 0);
 });
+
+const courseButtons = document.querySelectorAll(".complete, .incomplete");
+
+function populateModal(course){
+    courseModal.innerHTML = "";
+    courseModal.innerHTML = `
+    <div>
+        <button id="closeModal">X</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certification</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology}</p>
+    </div>
+    `;
+    courseModal.showModal();
+
+    closeModal.addEventListener("click", () =>{
+        courseModal.close();
+    });
+
+    courseModal.addEventListener("click", (event) => {
+        if(event.target==courseModal){
+            courseModal.close();
+        }
+    });
+}
+
+function addModalTrigger(){
+    courseButtons.forEach((button) =>{
+        button.addEventListener("click", ()=>{
+            populateModal(courses[button.id]);
+        });
+    });
+}
+
+addModalTrigger();
+

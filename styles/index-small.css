@@ -179,6 +179,7 @@
         justify-content: center;
         text-align: center;
         overflow: scroll;
+        padding-bottom: 2rem;
     }
 
     .complete, .incomplete {
@@ -205,6 +206,27 @@
 
     footer p {
         padding: 1%;
+    }
+
+    dialog{
+        border: solid black;
+        border-radius: 8px;
+        padding: 1rem;
+        background-color: white;
+        width: 90%;
+        max-width: 600px;
+    }
+
+    ::backdrop {
+        background-color: rgba(255, 255, 255, 0.50);
+    }
+
+    dialog button {
+        position: absolute;
+        top: 23px;
+        right: 23px;
+        padding: 1rem;
+        border: solid black;
     }
     /* Font */
     .roboto-thin {

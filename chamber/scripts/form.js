@@ -13,7 +13,7 @@ const subEmail = `${params.get('email')}`;
 const subPhone = `${params.get('phone')}`;
 
 if(timestamp != null){
-    timestamp.innerHTML = Date();
+    timestamp.value = Date();
 }
 
 

@@ -14,7 +14,9 @@ const cardList = document.querySelectorAll('.card');
 const heroImage = document.querySelector('#hero');
 
 setTimeout(() => {
-    heroImage.style.display = 'block';
+    if(heroImage!=null){
+        heroImage.style.display = 'block';
+    } 
 }, 500);
 
 activeLink.forEach(link => {
@@ -115,15 +117,17 @@ if (memberCards != null) {
 function handleScreenChange() {
     const sWidth = window.innerWidth;
 
-    if (sWidth <= 800) {
+    if (sWidth <= 800 && heroImage != null) {
         // console.log('small');
         heroImage.setAttribute('src', 'images/heroimage-mobile.webp');
-    } else if (sWidth > 800) {
+    } else if (sWidth > 800 && heroImage != null) {
         // console.log('large');
         heroImage.setAttribute('src', 'images/kingston-heroimage.webp');
     }
 };
 
-handleScreenChange();
+if(heroImage != null){
+    handleScreenChange();
+}
 
 window.addEventListener('resize', handleScreenChange);

@@ -8,12 +8,13 @@ const phone = document.querySelector("#phone");
 const params = new URLSearchParams(window.location.search);
 const fname = `${params.get('fname')} ${params.get('lname')}`;
 const orgName = `${params.get('organization')}`;
-const subDate = `${params.get('date')}`;
+const subDate = `${params.get('timestamp')}`;
 const subEmail = `${params.get('email')}`;
 const subPhone = `${params.get('phone')}`;
 
 if(timestamp != null){
     timestamp.value = Date();
+    console.log(timestamp);
 }
 
 

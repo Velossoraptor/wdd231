@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD231 - Talia Olsen; Chamber Page">
     <meta name="Author" content="Talia Olsen">
-    <title>WDD 231 Chamber Page - Talia Olsen</title>
+    <title>Chamber Home Page - Talia Olsen</title>
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Talia Olsen - Chamber Page WDD231">
@@ -16,6 +16,8 @@
     <meta property="og:url" content="https://velossoraptor.github.io/wdd231/chamber/directory.html">
 
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.mjs" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" media="screen">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin  media="screen">
@@ -25,11 +27,12 @@
 
     <link rel="icon" href="images/favicon-chamber.ico">
 
-    <link rel="preload" fetchpriority="high" as="image" href="images/heroimage-mobile.webp" type="image/webp" media="(max-width: 800px)">
-    <link rel="preload" fetchpriority="high" as="image" href="images/kingston-heroimage.webp" type="image/webp" media="(min-width: 800px)">
+    <!-- <link rel="preload" fetchpriority="high" as="image" href="images/heroimage-mobile.webp" type="image/webp" media="(max-width: 800px)">
+    <link rel="preload" fetchpriority="high" as="image" href="images/kingston-heroimage.webp" type="image/webp" media="(min-width: 800px)"> -->
 
     <link rel="stylesheet" href="styles/base.css" media="screen">
     <link rel="stylesheet" href="styles/large.css" media="screen">
+    <!-- <link rel="stylesheet" href="styles/index.css" media="screen"> -->
 </head>
 
 <body>
@@ -46,8 +49,8 @@
             <div class="nav-container">
                 <nav id="desktop-nav">
                     <a href="/wdd231/chamber/index.html">Home</a>
-                    <a href="/wdd231/chamber/directory.html" class="active">Directory</a>
-                    <a href="/wdd231/chamber/join.html">Join</a>
+                    <a href="/wdd231/chamber/directory.html">Directory</a>
+                    <a href="/wdd231/chamber/join.html" class="active">Join</a>
                     <a href="#">Discover</a>
                 </nav>
             </div>
@@ -56,8 +59,8 @@
         <nav id="mobile-nav">
             <ul class="nav-container">
                 <li><a href="/wdd231/chamber/index.html">Home</a></li>
-                <li><a href="/wdd231/chamber/directory.html" class="active">Directory</a></li>
-                <li><a href="/wdd231/chamber/join.html">Join</a></li>
+                <li><a href="/wdd231/chamber/directory.html">Directory</a></li>
+                <li><a href="/wdd231/chamber/join.html" class="active">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
             
@@ -65,26 +68,29 @@
 
         <main>
             <div class="container">
-                <div id="hero-container">
-                    <img src="images/kingston-heroimage.webp" alt="an image of a harbor in kingston ontario, with an old bunker." id="hero" loading="eager">
-                </div>
-                <h1>Directory</h1>
-                <div class="tab-container">
+                <h1>Home</h1>
+                
+                <!-- <div class="tab-container">
                     <div class="tab" id="events">
                         <h2>Events</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam blanditiis aperiam accusantium corporis voluptatem quod praesentium, a quo unde velit.</p>
                     </div>
-                    <div class="tab">
+                    <div class="tab" id="current-weather">
                         <h2>Current Weather</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim repellendus, quasi tempora maxime accusamus labore id perferendis porro hic facere.</p>
+                        <div>
+                            <h3 id="current-temp">#</h3>
+                            <img src="#" alt=" " id="weather-icon">
+                            <p id="weather-caption"> </p>
+                        </div>
                     </div>
-                    <div class="tab">
+                    <div class="tab" id="weather-forecast">
                         <h2>Weather Forecast</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eos consequuntur minus unde omnis quia placeat velit natus dolor consequatur.</p>
+                        <div class="forecast-day"></div>
+                        <div class="forecast-day"></div>
+                        <div class="forecast-day"></div>
                     </div>
-                </div>
-                <div><button id="list-toggle" aria-label="List view toggle">Simple List</button></div>
-                <div class="member-cards"></div>
+                    <div class="spotlight-cards" id="spotlights"></div>
+                </div> -->
             </div>
         </main>
         <footer>

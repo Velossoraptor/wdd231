@@ -1,0 +1,35 @@
+* {
+    --Nav: #BCD39D;
+    --Footer: #FFBCB5;
+    --Background: #534b56;
+    --Text: #23022E;
+}
+
+#nav {
+    background-color: var(--Nav);
+    color: var(--Text);
+    width: fit-content;
+}
+#footer {
+    background-color: var(--Footer);
+    color: var(--Text);
+    width: fit-content;
+}
+#background {
+    color: white;
+    background-color: var(--Background);
+    width: fit-content;
+}
+#text {
+    color: var(--Text);
+}
+.unkempt-text {
+    font-family: "Unkempt";
+}
+.roboto-text, p, ul, li, figcaption {
+    font-family: "Roboto";
+}
+#wireframe {
+    width: 500px;
+    height: auto;
+}

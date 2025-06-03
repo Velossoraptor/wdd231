@@ -1,0 +1,68 @@
+{
+    "poi": [
+        {
+            "name": "Kingston Locks",
+            "image": "images/kingston-locks.webp",
+            "description": "Kingston mills features working locks, and is the site of the first mill built on the Rideau canal, called the Kings Mill. It is also the southern-most set of locks on the Rideau canal.",
+            "address": "Rideau Canal, Locks 46 - 49 - Kingston Mills, Kingston Mills Rd",
+            "url": "https://www.rideau-info.com/canal/locks/46-49-kingstonmills.html?utm_source=gmb&utm_medium=rideau_lock46to49",
+            "loading": "eager"
+        },
+        {
+            "name": "Kingston Market",
+            "image": "images/kingston-market.webp",
+            "description": "The Kingston market opens in the downtown market square most saturdays. Vendors from local businesses populate the stalls, and provide the opportunity to shop local producs.",
+            "address": "The Kingston Public Market, 216 Ontario St",
+            "url": "https://www.cityofkingston.ca/activities-and-recreation/farmers-market/kingston-public-market",
+            "loading": "eager"
+        },
+        {
+            "name": "Kingston Penitentiary",
+            "image": "images/kingston-penn.webp",
+            "description": "The Kingston Penitentiary is a former maximum security prison that now offers tours. The Penitentiary has been used as a set to film several movies and shows including Mayor of Kingstown, DC's Titans, and Star Trek: Discovery.",
+            "address": "Kingston Penitentiary, 560 King St W",
+            "url": "https://www.kingstonpentour.com",
+            "loading": "eager"
+        },
+        {
+            "name": "Kingston Downtown",
+            "image": "images/kingston-sign.webp",
+            "description": "The Kingston sign is a tourist attraction great for pictures and starting your journey through downtown Kingston.",
+            "address": "Kingston sign, 1095 Ontario St",
+            "url": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj3mr6zrNWNAxWjFzQIHR_7DAcQFnoECFQQAQ&url=https%3A%2F%2Fwww.tripadvisor.ca%2FLocationPhotoDirectLink-g154992-d12858901-i423298613-Kingston_Visitor_Information_Centre-Kingston_Ontario.html&usg=AOvVaw3tq0300eFotQNulg3yVHxg&opi=89978449",
+            "loading": "lazy"
+        },
+        {
+            "name": "Lemoine Point",
+            "image": "images/lemoine-point.webp",
+            "description": "The Lemoine Point Trail is a great spot of nature for those who enjoy walking trails. Bring some seeds to feed the birds!",
+            "address": "Lemoine Pt Trl, Kingston, ON",
+            "url": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjVxYDNrNWNAxWMMjQIHVJDFVgQFnoECBoQAQ&url=https%3A%2F%2Fcataraquiconservation.ca%2Fpages%2Flemoine-point-conservation-area&usg=AOvVaw0EYaTPvcCnr43HqoTUUCNA&opi=89978449",
+            "loading": "lazy"
+        },
+        {
+            "name": "Confederation Park",
+            "image": "images/the-pier.webp",
+            "description": "Located near the Kingston Sign, Confederation park features a wide view of the waterfront and docks. It is also located close to the Wolfe Island Ferry.",
+            "address": "Confederation Park, Kingston",
+            "url":"https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjQzLzerNWNAxXHADQIHfLfKhoQFnoECCAQAQ&url=https%3A%2F%2Fwww.tripadvisor.ca%2FAttraction_Review-g154992-d10735874-Reviews-Confederation_Park-Kingston_Ontario.html&usg=AOvVaw0hablQ6P8hekf1z9bFh4Nc&opi=89978449",
+            "loading": "lazy"
+        },
+        {
+            "name": "Fort Henry",
+            "image": "images/fort-henry.webp",
+            "description": "Fort Henry provides a window into the past, featuring actors and artifacts from when the fort was in use. Cannons, soldiers, and beaver tails make the fort a must. The fort also hosts events during halloween like Pumpkinferno, and Fort Fright.",
+            "address": "Fort Henry National Historic Site, 1 Fort Henry Dr",
+            "url": "https://www.forthenry.com",
+            "loading": "lazy"
+        },
+        {
+            "name": "Beaver Tails",
+            "image": "images/beaver-tails.webp",
+            "description": "Beaver Tails is a great place for those with a sweet tooth, featuring many variations of the popular friend pastry. Another place to string along your downtown adventure, come prepared for sticky, sugary goodness.",
+            "address":  "BeaverTails- Queues de Castor (Kingston Market St.), 20 Market St",
+            "url": "https://beavertails.com",
+            "loading": "lazy"
+        }
+    ]
+}

@@ -16,7 +16,7 @@
     <meta property="og:url" content="https://velossoraptor.github.io/wdd231/chamber/directory.html">
 
     <script src="scripts/directory.js" defer></script>
-    <script src="scripts/form.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" media="screen">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin  media="screen">
@@ -28,8 +28,8 @@
 
     <link rel="stylesheet" href="styles/base.css" media="screen">
     <link rel="stylesheet" href="styles/large.css" media="screen">
-    <link rel="stylesheet" href="styles/form.css" media="screen">
-
+    <link rel="stylesheet" href="styles/index.css" media="screen">
+    <link rel="stylesheet" href="styles/discover.css" media="screen">
 </head>
 
 <body>
@@ -37,7 +37,7 @@
             <button id="hamburger" aria-label="hamburger menu toggle"></button>
             <div id="wrapper">
                 <img src="images/header-optimized.webp"
-                    alt="An illustration of the kingston ontario government logo.">
+                    alt="An illustration of the kingston ontario government logo." width="100px" height="100px">
                 <div id="title">
                     <span>Kingston</span>
                     <p>Chamber of Commerce</p>
@@ -48,42 +48,31 @@
                     <a href="/wdd231/chamber/index.html">Home</a>
                     <a href="/wdd231/chamber/directory.html">Directory</a>
                     <a href="/wdd231/chamber/join.html">Join</a>
-                    <a href="/wdd231/chamber/discover.html">Discover</a>
+                    <a href="/wdd231/chamber/discover.html" class="active">Discover</a>
                 </nav>
             </div>
         </header>
 
         <nav id="mobile-nav">
             <ul class="nav-container">
-                <li><a href="/wdd231/chamber/index.html">Home</a></li>
+                <li><a href="/wdd231/chamber/index.html" class="active">Home</a></li>
                 <li><a href="/wdd231/chamber/directory.html">Directory</a></li>
                 <li><a href="/wdd231/chamber/join.html">Join</a></li>
-                <li><a href="/wdd231/chamber/discover.html">Discover</a></li>
+                <li><a href="/wdd231/chamber/discover.html" class="active">Discover</a></li>
             </ul>
             
         </nav>
 
         <main>
             <div class="container">
-                <div class="thankyou">
-                    <h1>Thank you for your Application!</h1>
-                    <h2>Your application has been registered to:</h2>
-                    <p><span id="name">FIRST LAST</span> on behalf of <span id="organization">BUSINESS NAME</span> on <span id="date">CURRENT DATE</span>.</p>
-                    <p>We'll contact you via email at <span id="email">EMAIL</span> or by phone at <span id="phone">PHONE</span> <br>regarding your application status.</p>
-                    <p>Thank you for your interest!</p>
+                <h1>Discover</h1>
+                <h2 class="visit-data">Last Visit</h2>
+                <div class="discover-grid">
+                    
                 </div>
             </div>
         </main>
         <footer>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-                
-            </div>
             <p>©<span id="currentyear"></span> 🦕 Talia Olsen 🦕 Canada</p>
             <p id="lastModified">Last Modified: </p>
         </footer>

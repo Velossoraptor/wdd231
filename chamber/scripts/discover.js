@@ -26,7 +26,7 @@ const displayDiscovery = (pois) => {
         img.alt = `${poi.title}`;
         img.loading = `${poi.loading}`;
         address.innerHTML = `${poi.address}`;
-        address.title = `${poi.title}`;
+        link.title = `${poi.title}`;
         desc.innerHTML = `${poi.description}`;
         link.href = `${poi.url}`;
         link.target = "blank";

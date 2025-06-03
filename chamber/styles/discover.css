@@ -53,14 +53,17 @@
     text-align: center;
 }
 
-.discover-grid a{
+.discover-grid button {
+    background: none;
     text-decoration: none;
+    cursor: pointer;
     padding: .5rem;
     margin-top: 10%;
     background-color: rgb(56, 61, 105);
     color: white;
     border-radius: 8px;
 }
+
 
 .discover-grid section{
     border-radius: 8px;

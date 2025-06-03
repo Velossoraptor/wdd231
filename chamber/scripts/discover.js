@@ -16,28 +16,30 @@ const displayDiscovery = (pois) => {
         let title = document.createElement('h2');
         let figure = document.createElement('figure');
         let img = document.createElement('img');
-        let url = document.createElement('address');
+        let address = document.createElement('address');
         let desc = document.createElement('p');
-        let button = document.createElement('a');
+        let button = document.createElement('button');
+        let link = document.createElement('a');
 
         title.innerHTML = `${poi.name}`;
         img.src = `${poi.image}`;
         img.alt = `${poi.title}`;
         img.loading = `${poi.loading}`;
-        url.innerHTML = `${poi.address}`;
-        url.title = `${poi.title}`;
+        address.innerHTML = `${poi.address}`;
+        address.title = `${poi.title}`;
         desc.innerHTML = `${poi.description}`;
-        button.href = `${poi.url}`;
-        button.target = "blank";
-        button.innerHTML = "Learn More";
+        link.href = `${poi.url}`;
+        link.target = "blank";
+        button.textContent = "Learn More";
 
         figure.appendChild(img);
 
         card.appendChild(title);
         card.appendChild(figure);
-        card.appendChild(url);
+        card.appendChild(address);
         card.appendChild(desc);
-        card.appendChild(button);
+        link.appendChild(button);
+        card.appendChild(link);
 
         discoverGrid.appendChild(card);
     });
@@ -54,7 +56,7 @@ function displayWelcome() {
     else {
         lastVisitDate = new Date(localStorage.getItem("lastVisit"));
     }
-    
+
     let daysBetween = (todaysDate.getTime() - new Date(lastVisitDate).getTime()) / msToDays;
     console.log(todaysDate.getTime() - new Date(lastVisitDate).getTime() , msToDays);
 

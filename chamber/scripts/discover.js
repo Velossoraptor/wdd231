@@ -23,14 +23,14 @@ const displayDiscovery = (pois) => {
 
         title.innerHTML = `${poi.name}`;
         img.src = `${poi.image}`;
-        img.alt = `${poi.title}`;
+        img.alt = `${poi.name}`;
         img.loading = `${poi.loading}`;
         address.innerHTML = `${poi.address}`;
-        link.title = `${poi.title}`;
+        link.title = `${poi.name}`;
         desc.innerHTML = `${poi.description}`;
         link.href = `${poi.url}`;
         link.target = "blank";
-        button.textContent = "Learn More";
+        button.textContent = `Learn More about ${poi.name}`;
 
         figure.appendChild(img);
 

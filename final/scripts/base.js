@@ -7,6 +7,9 @@ const navigation = document.querySelector('#mobile-nav');
 const activeLink = document.querySelectorAll('.active');
 
 const gallery = document.querySelector('.gallery-container');
+const galleryModal = document.querySelector('#gallery-fullscreen');
+// let galleryImages = 0;
+let imgData = 0;
 
 activeLink.forEach(link => {
     link.innerHTML = `🦕${link.innerHTML}`;
@@ -22,13 +25,20 @@ hamButton.addEventListener('click', () => {
 });
 
 if(gallery != null){
+    
     async function getGalleryData(){
         const response = await fetch("gallery-data.json");
         const data = await response.json();
+        // const imgData = data.images;
         displayGallery(data.images);
+
+        const galleryImages = document.querySelectorAll(".gallery-image");
+        // console.log(galleryImages);
+        addModalTrigger(galleryImages, data.images);
     }
 
     getGalleryData();
+
     const displayGallery = (images) =>{
         images.forEach((image) =>{
             let card = document.createElement('section');
@@ -41,6 +51,9 @@ if(gallery != null){
             title.innerHTML = `${image.name}`;
             img.src = `${image.small}`;
             img.alt = `Oops! Image error`;
+            img.classList.add("gallery-image");
+            img.dataset.index = images.indexOf(image);
+            img.loading = `${image.loading}`;
             desc.innerHTML = `${image.desc}`;
             cost.innerHTML = `Cost: $${image.cost} (Additional elements incur additional charges)`;
 
@@ -50,9 +63,44 @@ if(gallery != null){
             card.appendChild(title);
             card.appendChild(display);
             card.appendChild(cost);
+            card.classList.add("card");
 
             gallery.appendChild(card);
         });
     }
+
+    
+  
+    function populateModal(data){
+        galleryModal.innerHTML = "";
+        galleryModal.innerHTML = `
+        <div>
+            <button id="closeModal">X</button>
+            <h2>${data.name}</h2>
+            <img src="${data.large}" alt="${data.desc}">
+        </div>
+        `;
+        galleryModal.showModal();
+
+        closeModal.addEventListener("click", () =>{
+            galleryModal.close();
+        });
+
+        galleryModal.addEventListener("click", (event) => {
+            if(event.target==galleryModal){
+                galleryModal.close();
+            }
+        });
+    }
+
+    function addModalTrigger(galleryImages, imgData){
+        galleryImages.forEach((image) =>{
+            image.addEventListener("click", ()=>{
+                const index = image.dataset.index;
+                populateModal(imgData[index]);
+            });
+        });
+    }
+
 
 }

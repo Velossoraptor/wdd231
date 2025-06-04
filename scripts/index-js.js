@@ -113,7 +113,7 @@ function classCard(course){
     }
     else {
         return `
-        <button class="incomplete" id="${courses.indexOf(course)}">${course.subject} ${course.number}</nutton>
+        <button class="incomplete" id="${courses.indexOf(course)}">${course.subject} ${course.number}</button>
         `
     }
 }

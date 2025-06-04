@@ -5,105 +5,120 @@
             "large": "images/tal-big.webp",
             "small": "images/tal-small.webp",
             "desc": "Illustration based on a real person. Full shading, rendered background",
-            "cost": "50"
+            "cost": "50",
+            "loading": "eager"
         },
         {
             "name": "Cartooned",
             "large": "images/tal-char-big.webp",
             "small": "images/tal-char-small.webp",
             "desc": "Character Illustration based on a real person. Simple shading, abstract background.",
-            "cost": "25"
+            "cost": "25",
+            "loading": "eager"
         },
         {
             "name": "Cartooned",
             "large": "images/cartoon-big.webp",
             "small": "images/cartoon-small.webp",
             "desc": "Illustration superposed on a real photo. Full shading, color matching, you provide the photo.",
-            "cost": "35"
+            "cost": "35",
+            "loading": "eager"
         },
         {
             "name": "Welcome to the Novel",
             "large": "images/chris-big.webp",
             "small": "images/chris-small.webp",
             "desc": "Character Illustration based on a real person. Simple shading, abstract background.",
-            "cost": "30"
+            "cost": "30",
+            "loading": "lazy"
         },
         {
             "name": "Welcome to the Novel",
             "large": "images/Nathan-big.webp",
             "small": "images/Nathan-small.webp",
             "desc": "Character Illustration based on a real person. Simple shading, abstract background.",
-            "cost": "30"
+            "cost": "30",
+            "loading": "lazy"
         },
         {
             "name": "Chibi",
             "large": "images/juniper-big.webp",
             "small": "images/juniper-small.webp",
             "desc": "Character Illustration. Very minimal shading, abstract/no background, simple proportions.",
-            "cost": "20"
+            "cost": "20",
+            "loading": "lazy"
         },
         {
             "name": "Profile Picture",
             "large": "images/pseu-pfp-big.webp",
             "small": "images/pseu-pfp-small.webp",
             "desc": "Illustration based on a real person. Simple shading, abstract/no background, intended as a profile.",
-            "cost": "40"
+            "cost": "40",
+            "loading": "lazy"
         },
         {
             "name": "Realist",
             "large": "images/hand-big.webp",
             "small": "images/hand-small.webp",
             "desc": "Realism Painting based on a reference image. Fully rendered, paint brush, abstract/simple background.",
-            "cost": "45"
+            "cost": "45",
+            "loading": "lazy"
         },
         {
             "name": "You, but Small",
             "large": "images/statuses-big.webp",
             "small": "images/statuses-small.webp",
             "desc": "Chibi Illustration based on a real person. Simple/no shading, abstract background.",
-            "cost": "20"
+            "cost": "20",
+            "loading": "lazy"
         },
         {
             "name": "You, but Small",
             "large": "images/xmas-pseu-big.webp",
             "small": "images/xmas-pseu-small.webp",
             "desc": "Character Illustration based on a real person. Full shading, rendered background.",
-            "cost": "25"
+            "cost": "25",
+            "loading": "lazy"
         },
         {
             "name": "Character",
             "large": "images/oros-big.webp",
             "small": "images/oros-small.webp",
             "desc": "Character Illustration based on a description. Varied shading, abstract/simple background.",
-            "cost": "35"
+            "cost": "35",
+            "loading": "lazy"
         },
         {
             "name": "Character",
             "large": "images/lirien-big.webp",
             "small": "images/lirien-small.webp",
             "desc": "Character Illustration based on a description. Varied shading, abstract/simple background.",
-            "cost": "40"
+            "cost": "40",
+            "loading": "lazy"
         },
         {
             "name": "Character",
             "large": "images/chris-char-big.webp",
             "small": "images/chris-char-small.webp",
             "desc": "Character Illustration based on a description. Varied shading, abstract/simple background.",
-            "cost": "40"
+            "cost": "40",
+            "loading": "lazy"
         },
         {
             "name": "Character",
             "large": "images/isadore-big.webp",
             "small": "images/isadore-small.webp",
             "desc": "Character Illustration based on a description. Varied shading, abstract/simple background.",
-            "cost": "30"
+            "cost": "30",
+            "loading": "lazy"
         },
         {
             "name": "Community Banner",
             "large": "images/invite-banner-big.webp",
             "small": "images/invite-banner-small.webp",
             "desc": "Wide Illustration based on a description. Varied shading, meant as a server or twitch banner.",
-            "cost": "35"
+            "cost": "35",
+            "loading": "lazy"
         }
     ]
 }

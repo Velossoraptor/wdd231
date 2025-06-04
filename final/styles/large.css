@@ -1,0 +1,14 @@
+@media (min-width: 640px){
+    #mobile-nav{
+        display: none;
+    }
+    #hamburger{
+        display: none;
+    }
+    #desktop-nav{
+        display: flex;
+    }
+    .nav-container{
+        background-color: var(--Nav)
+    }
+} 

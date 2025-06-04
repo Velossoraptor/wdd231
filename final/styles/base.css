@@ -1,0 +1,85 @@
+* {
+    --Nav: #BCD39D;
+    --Footer: #FFBCB5;
+    --Background: #534b56;
+    --Text: #23022E;
+    color: var(--Text);
+}
+
+/* Top */
+
+header {
+    /* background-color: var(--Nav); */
+    justify-content: space-between; 
+    display: flex;  
+}
+
+/* Hamburger Settings */
+
+#hamburger {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: block;
+    cursor: pointer;
+}
+   
+#hamburger::before {
+    content: "☰";
+    color: black;
+}
+    
+#hamburger.open::before {
+    content: "❌";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .5s ease-in-out;
+    text-align: center;
+    align-content: center;
+}
+
+.nav-container {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#mobile-nav.open{
+    grid-template-rows: 1fr;
+    transition: grid-template-rows .5s ease-out;
+}
+    
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    width: 90%;
+    justify-content: space-around;
+}
+    
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.216);
+    color: white;
+}
+
+#desktop-nav {
+    display: none;
+}
+
+#mobile-nav {
+    background-color: var(--Nav);
+}
+
+footer{
+    background-color: var(--Footer);
+    text-align: center;
+}

@@ -7,10 +7,20 @@
     }
     #desktop-nav{
         display: flex;
+        background-color: transparent;
+        justify-content: space-evenly;
     }
-    .nav-container{
-        background-color: var(--Nav)
+    nav a{
+        background-color: var(--Nav);
+        width: 200px;
+        justify-content: space-between;
+        border-radius: 8px;
     }
+    nav a:hover {
+    background-color: rgb(79, 112, 71);
+    color: white;
+    }
+
     @media (min-width: 1025px) {
         .gallery-container{
             grid-auto-columns: minmax(300px, 500px);
@@ -21,7 +31,7 @@
             ;
         }
         .gallery-container img:hover{
-            box-shadow: 0px 0px 10px 10px rgba(81, 102, 110, 0.551);
+            box-shadow: 0px 0px 10px 10px rgba(124, 158, 116, 0.551);
             cursor: pointer;
         }
     }
@@ -36,7 +46,7 @@
             ;
         }
         .gallery-container img:hover{
-            box-shadow: 0px 0px 10px 10px rgba(81, 102, 110, 0.551);
+            box-shadow: 0px 0px 10px 10px rgba(124, 158, 116, 0.551);
             cursor: pointer;
         }
     }

@@ -29,7 +29,10 @@
 <body>
         <header>
             <button id="hamburger" aria-label="hamburger menu toggle"></button>
-            <img src="#" alt="Scribbles by Velossoraptor Logo" id="logo">
+            <picture>
+                <source media="(min-width: 655px)" srcset="images/my-logo-large.webp">
+                <img src="images/my-logo.webp" alt="Scribbles by Velossoraptor Logo" id="logo" width="300">
+            </picture>
         </header>
         <div class="nav-container">
             <nav id="desktop-nav">
@@ -48,6 +51,10 @@
         </nav>
 
         <main>
+            <div class="page-title">
+                <h1>My Work</h1>
+                <p>Here are some examples of my work! If you like what you see, check out my About page!</p>
+            </div>
             <div class="gallery-container">
 
             </div>

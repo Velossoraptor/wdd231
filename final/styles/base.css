@@ -1,10 +1,15 @@
 * {
     --Nav: #BCD39D;
     --Footer: #FFBCB5;
-    --Background: #534b56;
+    --Background: #4b3939;
+    --DarkBackground: #2f2222;
     --Text: #23022E;
     color: var(--Text);
     font-family: "Unkempt"
+}
+
+html{
+    background-color: rgb(24, 24, 24);
 }
 
 p, figcaption{
@@ -14,8 +19,13 @@ p, figcaption{
 /* Top */
 
 header {
-    justify-content: space-between; 
+    justify-content: center; 
     display: flex;  
+}
+header img{
+    margin: 0 auto;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
 }
 
 /* Hamburger Settings */
@@ -81,6 +91,19 @@ nav a:hover {
 
 #mobile-nav {
     background-color: var(--Nav);
+}
+
+.page-title{
+    text-align: center;
+    margin-top: 2vw;
+    padding: 12px;
+    /* width: fit-content; */
+    background-image: linear-gradient(var(--Background), var(--DarkBackground));
+}
+.page-title p, .page-title h1{
+    color: white;
+    padding: 3px;
+    margin: 0;
 }
 
 .gallery-container{

@@ -58,8 +58,9 @@ if(gallery != null){
             let cost = document.createElement('p');
 
             title.innerHTML = `${image.name}`;
-            img.src = `${image.small}`;
-            img.alt = `Oops! Image error`;
+            img.src = `/final/${image.small}`;
+            img.alt = `${image.desc}`;
+            // img.alt = `Oops! Image error`;
             img.classList.add("gallery-image");
             img.dataset.index = images.indexOf(image);
             img.loading = `${image.loading}`;

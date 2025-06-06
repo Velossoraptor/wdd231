@@ -12,15 +12,15 @@ const galleryModal = document.querySelector('#gallery-fullscreen');
 const contMenu = document.querySelector(".right-click-menu");
 let imgData = 0;
 
-document.addEventListener('contextmenu', event => {
-  event.preventDefault();
-  contMenu.style.left = event.pageX + 'px';
-  contMenu.style.top = event.pageY + 'px';
-  contMenu.style.display = 'block';
-});
-document.addEventListener('click', function() {
-  contMenu.style.display = 'none';
-});
+// document.addEventListener('contextmenu', event => {
+//   event.preventDefault();
+//   contMenu.style.left = event.pageX + 'px';
+//   contMenu.style.top = event.pageY + 'px';
+//   contMenu.style.display = 'block';
+// });
+// document.addEventListener('click', function() {
+//   contMenu.style.display = 'none';
+// });
 
 activeLink.forEach(link => {
     link.innerHTML = `🦕${link.innerHTML}`;
@@ -58,7 +58,7 @@ if(gallery != null){
             let cost = document.createElement('p');
 
             title.innerHTML = `${image.name}`;
-            img.src = `/final/${image.small}`;
+            img.src = `https://velossoraptor.github.io/wdd231/final/${image.small}`;
             img.alt = `${image.desc}`;
             // img.alt = `Oops! Image error`;
             img.classList.add("gallery-image");

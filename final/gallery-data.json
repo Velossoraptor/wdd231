@@ -34,8 +34,8 @@
         },
         {
             "name": "Welcome to the Novel",
-            "large": "images/Nathan-big.webp",
-            "small": "images/Nathan-small.webp",
+            "large": "images/nathan-big.webp",
+            "small": "images/nathan-small.webp",
             "desc": "Character Illustration based on a real person. Simple shading, abstract background.",
             "cost": "30",
             "loading": "lazy"

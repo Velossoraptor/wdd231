@@ -8,10 +8,18 @@ const activeLink = document.querySelectorAll('.active');
 
 const gallery = document.querySelector('.gallery-container');
 const galleryModal = document.querySelector('#gallery-fullscreen');
+
+const contMenu = document.querySelector(".right-click-menu");
 let imgData = 0;
 
 document.addEventListener('contextmenu', event => {
   event.preventDefault();
+  contMenu.style.left = event.pageX + 'px';
+  contMenu.style.top = event.pageY + 'px';
+  contMenu.style.display = 'block';
+});
+document.addEventListener('click', function() {
+  contMenu.style.display = 'none';
 });
 
 activeLink.forEach(link => {

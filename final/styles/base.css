@@ -8,6 +8,16 @@
     font-family: "Unkempt"
 }
 
+.right-click-menu{
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: var(--Footer);
+    border: 1px solid var(--Background);
+    z-index: 1000;
+    width: 200px;
+}
+
 html{
     background-color: rgb(24, 24, 24);
 }
@@ -148,6 +158,7 @@ dialog img{
 dialog{
     text-align: center;
     background-color: rgb(255, 255, 255);
+    z-index: 50;
 }
 
 ::backdrop {

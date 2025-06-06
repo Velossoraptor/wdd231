@@ -8,8 +8,11 @@ const activeLink = document.querySelectorAll('.active');
 
 const gallery = document.querySelector('.gallery-container');
 const galleryModal = document.querySelector('#gallery-fullscreen');
-// let galleryImages = 0;
 let imgData = 0;
+
+document.addEventListener('contextmenu', event => {
+  event.preventDefault();
+});
 
 activeLink.forEach(link => {
     link.innerHTML = `🦕${link.innerHTML}`;
@@ -29,11 +32,9 @@ if(gallery != null){
     async function getGalleryData(){
         const response = await fetch("gallery-data.json");
         const data = await response.json();
-        // const imgData = data.images;
         displayGallery(data.images);
 
         const galleryImages = document.querySelectorAll(".gallery-image");
-        // console.log(galleryImages);
         addModalTrigger(galleryImages, data.images);
     }
 

@@ -38,12 +38,23 @@ hamButton.addEventListener('click', () => {
 if(gallery != null){
     
     async function getGalleryData(){
-        const response = await fetch("gallery-data.json");
-        const data = await response.json();
-        displayGallery(data.images);
+        try{
+            const response = await fetch("gallery-data.json");
+            if(response.ok){
+                const data = await response.json();
+                displayGallery(data.images);
 
-        const galleryImages = document.querySelectorAll(".gallery-image");
-        addModalTrigger(galleryImages, data.images);
+                const galleryImages = document.querySelectorAll(".gallery-image");
+                addModalTrigger(galleryImages, data.images);
+            }else{
+                throw Error(await response.text);
+            }
+
+        }
+        catch(error){
+            console.log(Error);
+        }
+
     }
 
     getGalleryData();
@@ -60,7 +71,6 @@ if(gallery != null){
             title.innerHTML = `${image.name}`;
             img.src = `https://velossoraptor.github.io/wdd231/final/${image.small}`;
             img.alt = `${image.desc}`;
-            // img.alt = `Oops! Image error`;
             img.classList.add("gallery-image");
             img.dataset.index = images.indexOf(image);
             img.loading = `${image.loading}`;

@@ -65,5 +65,58 @@
         transition: all ease-in-out .25s;
     }
 
+    .info{
+        padding: 20px;
+        margin: 5vw 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas: 
+        "a a"
+        "b c"
+        "d d";
+        overflow: hidden;
+        text-align: left;
+    }
+    .info>h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .info>p{
+        text-align: center;
+    }
 
+    .left>h2{
+        grid-area: a;
+    }
+    .left>img{
+        grid-area: b;
+    }
+    .left>div{
+        grid-area: c;
+    }
+    .left>p{
+        grid-area: d;
+    }
+
+    .right>h2{
+        grid-area: a;
+    }
+    .right>img{
+        grid-area: c;
+    }
+    .right>div{
+        grid-area: b;
+    }
+    .right>p{
+        grid-area: d;
+    }
+
+
+    .info li{
+        list-style-type: none;
+        padding: 3px;
+        text-align: left;
+        font-size: 1.2rem;
+    }
 } 

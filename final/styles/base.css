@@ -3,7 +3,10 @@
     --Footer: #FFBCB5;
     --Background: #4b3939;
     --DarkBackground: #2f2222;
+    --LightBackground: rgb(236, 232, 232);
+    --DarkMode:  #181818;
     --Text: #23022E;
+    
     color: var(--Text);
     font-family: "Unkempt"
 }
@@ -19,11 +22,16 @@
 }
 
 html{
-    background-color: rgb(24, 24, 24);
+    background-color: var(--DarkMode);
 }
 
 p, figcaption{
     font-family: "Roboto"
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Top */
@@ -44,7 +52,7 @@ header img{
     font-size: 1.5rem;
     border: 0;
     background: none;
-    color: #000;
+    color: #ffffff;
     position: fixed;
     top: 1rem;
     right: 1rem;
@@ -83,7 +91,7 @@ nav a {
     display: block;
     text-align: center;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
     padding: 10px;
     width: 90%;
@@ -107,7 +115,6 @@ nav a:hover {
     text-align: center;
     margin-top: 2vw;
     padding: 12px;
-    /* width: fit-content; */
     background-image: linear-gradient(var(--Background), var(--DarkBackground));
 }
 .page-title p, .page-title h1{
@@ -129,7 +136,7 @@ nav a:hover {
 }
 .card{
     text-align: center;
-    background-color: rgb(236, 232, 232);
+    background-color: var(--LightBackground);
     padding: 1rem;
     border-radius: 8px;
     border: solid var(--Text);
@@ -141,6 +148,46 @@ nav a:hover {
     max-width: 500px;
     transition: all ease-in-out .25s;
 }
+
+.info{
+    padding: 20px;
+    margin: 5vw 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.info img{
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.info li{
+    list-style-type: none;
+}
+.left{
+    border-radius: 30% 10% 30% 10%;
+    background-color: var(--Footer);
+    text-align: center;
+}    
+.left div{
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 0 auto;
+}
+.right{
+    border-radius: 10% 30% 10% 30%;
+    background-color: var(--Nav);
+}    
+.right div{
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 30%;
+    width: fit-content;
+    margin: 0 auto;
+}
+
 
 footer{
     background-color: var(--Footer);

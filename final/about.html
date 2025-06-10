@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An About Page for Velossoraptor">
+    <meta name="Author" content="Velossoraptor">
+    <title>Scribbles by Velossoraptor</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Scribbles by Velossoraptor">
+    <meta property="og:description"
+        content="An About Page for Velossoraptor">
+    <meta property="og:image" content="https://velossoraptor.github.io/wdd231/final/images/my-logo-large.webp">
+    <meta property="og:url" content="https://velossoraptor.github.io/wdd231/final/index.html">
+
+    <link rel="stylesheet" href="styles/base.css" media="screen">
+    <link rel="stylesheet" href="styles/large.css" media="screen">
+    <script src="scripts/base.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon-velo.ico">
+</head>
+
+<body>
+        <header>
+            <button id="hamburger" aria-label="hamburger menu toggle"></button>
+            <picture>
+                <source media="(min-width: 655px)" srcset="images/my-logo-large.webp">
+                <img src="images/my-logo.webp" alt="Scribbles by Velossoraptor Logo" id="logo" width="300">
+            </picture>
+        </header>
+        <div class="nav-container">
+            <nav id="desktop-nav">
+                <a href="/wdd231/final/index.html">Home</a>
+                <a href="/wdd231/final/about.html" class="active">About</a>
+                <a href="/wdd231/final/contact.html">Contact Me</a>
+            </nav>
+        </div>
+
+        <nav id="mobile-nav">
+            <ul class="nav-container">
+                <li><a href="/wdd231/final/index.html">Home</a></li>
+                <li><a href="/wdd231/final/about.html" class="active">About</a></li>
+                <li><a href="/wdd231/final/contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="page-title">
+                <h1>About Me</h1>
+                <p>This is a little about me and what I do. If you like what you see, you should check out my <a href="https://www.instagram.com/velossoraptor/">Instagram!</a></p>
+            </div>
+
+            <div class="info left">
+                <h2>Hello!</h2>
+                <img src="images/profile-picture.webp" alt="image of a girl holding icecream with bunny ears, on a background of flowers, all drawn with a soft brush." width="300" height="auto" loading="lazy">
+                <div>
+                    <p>I'm Velossoraptor, and I'm a character artist. <br>I love to play D&D, Game, and Code. <br>I draw for all sorts of things! Including:</p>
+                    <ul>
+                        <li>D&D Parties</li>
+                        <li>Gaming Groups</li>
+                        <li>Twitch Streamers</li>
+                        <li>Authors</li>
+                        <li>Independant Commissioners</li>
+                        <li>And More!</li>
+                    </ul>
+                </div>
+
+                <p>Disclaimer: I don't do anything NSFW, any requests related to or containing such content will be ignored.</p>
+            </div>
+            <div class="info right">
+                <h2>If you're...</h2>
+                <img src="images/eek-velo.webp" alt="image of a girl wearing a beanie, stressed out" width="300" height="auto">
+                <div>
+                    <ul>
+                        <li><a href="https://www.instagram.com/p/CoCrho3OUD3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">- A D&D nerd, go to <b>this post</b> to see some ideas!</a></li>
+                        <li><a href="https://www.instagram.com/p/Cf_snOLJ80j/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">- A Twitch Streamer, go to <b>this post</b> to see some examples of what I've done!</a></li>
+                        <li><a href="https://www.instagram.com/p/Cz2EkOgOXDi/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">- An Author, go to <b>this post</b> to see my collaborations with authors!</a></li>
+                        <li><a href="https://www.instagram.com/p/CrI13ybImZa/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">- A Gamer looking for your avatar, go to <b>this post</b> to see my work!</a></li>
+                        <li><a href="https://www.instagram.com/p/Cn8Pi_4vD4a/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">- An independant comissioner, go to <b>this post</b> for some ideas!</a></li>
+                        <li><a href="https://www.instagram.com/reel/CvXNbVROnfS/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">- Confused, unsure, or overwhelmed? Go to <b>this post</b> to see some cool art anyway!</a></li>
+                        <li><a href="/wdd231/final/contact.html">- Not seeing what you want? <b>Contact Me!</b></a></li>
+                    </ul>
+                </div>
+                <p>Thanks for checking out my page :)</p>
+            </div>
+            <div class="right-click-menu">
+                <p>Sorry, right click has been disabled to prevent image theft!<br>Thanks for your understanding.</p>
+            </div>
+        </main>
+        <footer>
+            <p>©<span id="currentyear"></span> 🦕 Talia Olsen 🦕 Canada</p>
+            <p id="lastModified">Last Modified: </p>
+            <p>My Demo Video: <a href="youtube.com">Here</a></p>
+        </footer>
+</body>
+
+</html>

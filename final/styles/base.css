@@ -117,10 +117,11 @@ nav a:hover {
     padding: 12px;
     background-image: linear-gradient(var(--Background), var(--DarkBackground));
 }
-.page-title p, .page-title h1{
+.page-title p, .page-title h1, .page-title p b{
     color: white;
     padding: 3px;
     margin: 0;
+    font-family: "Roboto";
 }
 
 .gallery-container{

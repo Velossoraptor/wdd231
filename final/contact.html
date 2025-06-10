@@ -17,7 +17,9 @@
 
     <link rel="stylesheet" href="styles/base.css" media="screen">
     <link rel="stylesheet" href="styles/large.css" media="screen">
+    <link rel="stylesheet" href="styles/form.css" media="screen">
     <script src="scripts/base.js" defer></script>
+    <script type="module" src="scripts/form.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,9 +56,58 @@
         <main>
             <div class="page-title">
                 <h1>Contact Me</h1>
-                <p>Please use this form if you have questions, or want to make a comission</p>
+                <p>Please use this form if you have questions, or want to make a comission.</p>
+                <p><b>*NOTE: This form is not functional at the moment. Please contact me via Instagram or Email.*</b></p>
             </div>
-
+            <div>
+                <form method="get" action="/wdd231/final/thanks.html">
+                    <fieldset>
+                        <legend>Sender Information</legend>
+                        <label>*Name <input type="text" name="name" placeholder="How should I address you?"></label>
+                        <label>*Email <input type="email" name="email" title="Email" placeholder="eg. you@place.com" autocomplete="email" required></label>
+                        <label>Alternative contact <input type="text" name="alt-contact" placeholder="eg. Platform: @yourUsername_"></label>
+                        <label>Reason for Message
+                            <select name="reason">
+                                <option value="" disabled selected>Please select</option>
+                                <option value="commission">I have a commission in mind</option>
+                                <option value="question">I have a question</option>
+                                <option value="problem">Problem with the site</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <fieldset id="commission-details" style="display: none">
+                        <legend>Commission Details</legend>
+                        <label>Type of Commission
+                            <select name="cType">
+                                <option value="" disabled selected>Please Select</option>
+                                <option value="commission">D&D</option>
+                                <option value="profile">Profile Picture</option>
+                                <option value="twitch">Twitch</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </label>
+                        <label>If other, please specify <input type="text" name="other-comission"></label>
+                        <label>Number of characters <input type="number" name="numChar"></label>
+                    </fieldset>
+                    <fieldset id="question-details" style="display: none">
+                        <legend>Question Details</legend>
+                        <label>Question Title <input type="text" maxlength="100" name="qTitle"></label>
+                        <label>Details <textarea name="qDetails"></textarea></label>
+                    </fieldset>
+                    <fieldset id="problem-details" style="display: none">
+                        <legend>Problem Details</legend>
+                        <label>Where is the Problem?<input type="text" maxlength="100" name="pTitle"></label>
+                        <label>Details <textarea name="pDetails"></textarea></label>
+                    </fieldset>
+                    <fieldset id="other-details" style="display: none">
+                        <legend>Other Details</legend>
+                        <label>Other Title<input type="text" maxlength="100" name="oTitle"></label>
+                        <label>Details <textarea name="oDetails"></textarea></label>
+                    </fieldset>
+                    <input id="subButton" type="submit" value="Send Message" style="display: none"></button>
+                </form>
+            </div>
             
             <div class="right-click-menu">
                 <p>Sorry, right click has been disabled to prevent image theft!<br>Thanks for your understanding.</p>

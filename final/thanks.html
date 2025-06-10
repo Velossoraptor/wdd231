@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Thank you page for Velossoraptor">
+    <meta name="Author" content="Velossoraptor">
+    <title>Scribbles by Velossoraptor</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Scribbles by Velossoraptor">
+    <meta property="og:description"
+        content="A Thank you page for Velossoraptor">
+    <meta property="og:image" content="https://velossoraptor.github.io/wdd231/final/images/my-logo-large.webp">
+    <meta property="og:url" content="https://velossoraptor.github.io/wdd231/final/index.html">
+
+    <link rel="stylesheet" href="styles/base.css" media="screen">
+    <link rel="stylesheet" href="styles/large.css" media="screen">
+    <link rel="stylesheet" href="styles/form.css" media="screen">
+    <script src="scripts/base.js" defer></script>
+    <script type="module" src="scripts/form.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon-velo.ico">
+</head>
+
+<body>
+        <header>
+            <button id="hamburger" aria-label="hamburger menu toggle"></button>
+            <picture>
+                <source media="(min-width: 655px)" srcset="images/my-logo-large.webp">
+                <img src="images/my-logo.webp" alt="Scribbles by Velossoraptor Logo" id="logo" width="300">
+            </picture>
+        </header>
+        <div class="nav-container">
+            <nav id="desktop-nav">
+                <a href="/wdd231/final/index.html">Home</a>
+                <a href="/wdd231/final/about.html">About</a>
+                <a href="/wdd231/final/contact.html">Contact Me</a>
+            </nav>
+        </div>
+
+        <nav id="mobile-nav">
+            <ul class="nav-container">
+                <li><a href="/wdd231/final/index.html">Home</a></li>
+                <li><a href="/wdd231/final/about.html">About</a></li>
+                <li><a href="/wdd231/final/contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="page-title">
+                <h1>Thank You!</h1>
+                <p>Thanks for submitting a message!</p>
+                <p><b>*NOTE: This form is not functional at the moment. Please contact me via Instagram or Email.*</b></p>
+            </div>
+            <div>
+                <p id="thanks-response">Hey <span id="name">there</span>! Thanks for submitting a message about this <span id="msgReason">thing</span>. This form doesnt work right now, but if it did, I would message you at <span id="email">your email</span> and/or at <span id="alt">an alternative contact</span>. I'd get back to you in 3-5 business days about your <span id="reasonTitle">specific thing</span>. <br>Thanks again for your interest!</p>
+            </div>
+            
+            <div class="right-click-menu">
+                <p>Sorry, right click has been disabled to prevent image theft!<br>Thanks for your understanding.</p>
+            </div>
+        </main>
+        <footer>
+            <p>©<span id="currentyear"></span> 🦕 Talia Olsen 🦕 Canada</p>
+            <p id="lastModified">Last Modified: </p>
+            <p>My Demo Video: <a href="youtube.com">Here</a></p>
+        </footer>
+</body>
+
+</html>

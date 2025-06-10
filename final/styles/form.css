@@ -1,0 +1,59 @@
+Form{
+    background-color: var(--LightBackground);
+    width: 80vw;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+}
+
+fieldset{
+    padding-left: 2rem;
+    margin-bottom: 5%;
+    border-radius: 8px;
+}
+
+legend{
+    padding: 1rem;
+}
+
+input, textarea, select{
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    height: 44px;
+    width: 50%;
+}
+
+label{
+    margin-top: 1rem;
+}
+
+input:required {
+    border-left: solid 8px var(--Footer);
+}
+
+input:required:valid {
+    border-left: solid 8px var(--Nav);
+}
+
+input[type="submit"] {
+    border: 2px solid #4c0a0a;
+    border-radius: 6px;
+    background-image: linear-gradient(var(--Footer), var(--Nav));
+    color: var(--Text);
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 5% auto;
+}
+
+#thanks-response{
+    background-color: var(--LightBackground);
+    text-align: center;
+    border-radius: 50%;
+    width: 60vw;
+    height: fit-content;
+    padding: 100px;
+    margin: 0 auto;
+    font-family: "Roboto";
+}   

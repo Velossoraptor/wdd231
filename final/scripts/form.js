@@ -37,6 +37,7 @@ function personalThankYou(){
     email.innerHTML = rEmail;
     alt.innerHTML = rAlt;
     if(rReason == "commission"){
+        console.log(`${params.get('cType')}`);
         rReasonTitle = `${params.get('cType')} commission`;
     }else if( rReason == "problem"){
         rReasonTitle = `${params.get('pTitle')}`;

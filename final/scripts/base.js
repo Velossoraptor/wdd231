@@ -6,11 +6,15 @@ const hamButton = document.querySelector('#hamburger');
 const navigation = document.querySelector('#mobile-nav');
 const activeLink = document.querySelectorAll('.active');
 
+const settingsButton = document.querySelector("#settings");
+const htmlBG = document.querySelector("html");
+
 const gallery = document.querySelector('.gallery-container');
 const galleryModal = document.querySelector('#gallery-fullscreen');
 
 const contMenu = document.querySelector(".right-click-menu");
 let imgData = 0;
+const startMode = localStorage.getItem('lightMode');
 
 // document.addEventListener('contextmenu', event => {
 //   event.preventDefault();
@@ -21,6 +25,14 @@ let imgData = 0;
 // document.addEventListener('click', function() {
 //   contMenu.style.display = 'none';
 // });
+
+if(startMode != null){
+    if(startMode == 'true'){
+        htmlBG.classList.add('light');
+    }else if (startMode == 'false'){
+        htmlBG.classList.remove('light');
+    }
+}
 
 activeLink.forEach(link => {
     link.innerHTML = `🦕${link.innerHTML}`;
@@ -33,6 +45,15 @@ lastModified.innerHTML = `Last Modified: ${document.lastModified}`;
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
+});
+settingsButton.addEventListener('click', ()=>{
+    htmlBG.classList.toggle('light');
+    
+    if(htmlBG.classList.contains('light')){
+        localStorage.setItem('lightMode', 'true');
+    }else{
+        localStorage.setItem('lightMode', 'false');
+    }
 });
 
 if(gallery != null){

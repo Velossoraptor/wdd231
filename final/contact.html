@@ -10,8 +10,7 @@
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Scribbles by Velossoraptor">
-    <meta property="og:description"
-        content="An About Page for Velossoraptor">
+    <meta property="og:description" content="An About Page for Velossoraptor">
     <meta property="og:image" content="https://velossoraptor.github.io/wdd231/final/images/my-logo-large.webp">
     <meta property="og:url" content="https://velossoraptor.github.io/wdd231/final/index.html">
 
@@ -30,94 +29,97 @@
 </head>
 
 <body>
-        <header>
-            <button id="hamburger" aria-label="hamburger menu toggle"></button>
-            <picture>
-                <source media="(min-width: 655px)" srcset="images/my-logo-large.webp">
-                <img src="images/my-logo.webp" alt="Scribbles by Velossoraptor Logo" id="logo" width="300">
-            </picture>
-        </header>
-        <div class="nav-container">
-            <nav id="desktop-nav">
-                <a href="/wdd231/final/index.html">Home</a>
-                <a href="/wdd231/final/about.html">About</a>
-                <a href="/wdd231/final/contact.html" class="active">Contact Me</a>
-            </nav>
+    <header>
+        <button id="hamburger" aria-label="hamburger menu toggle"></button>
+        <button id="settings" aria-label="settings menu toggle"></button>
+        <picture>
+            <source media="(min-width: 655px)" srcset="images/my-logo-large.webp">
+            <img src="images/my-logo.webp" alt="Scribbles by Velossoraptor Logo" id="logo" width="300">
+        </picture>
+    </header>
+    <div class="nav-container">
+        <nav id="desktop-nav">
+            <a href="/wdd231/final/index.html">Home</a>
+            <a href="/wdd231/final/about.html">About</a>
+            <a href="/wdd231/final/contact.html" class="active">Contact Me</a>
+        </nav>
+    </div>
+
+    <nav id="mobile-nav">
+        <ul class="nav-container">
+            <li><a href="/wdd231/final/index.html">Home</a></li>
+            <li><a href="/wdd231/final/about.html">About</a></li>
+            <li><a href="/wdd231/final/contact.html" class="active">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="page-title">
+            <h1>Contact Me</h1>
+            <p>Please use this form if you have questions, or want to make a comission.</p>
+            <p><b>*NOTE: This form is not functional at the moment. Please contact me via Instagram or Email.*</b></p>
+        </div>
+        <div>
+            <form method="get" action="/wdd231/final/thanks.html">
+                <fieldset>
+                    <legend>Sender Information</legend>
+                    <label>*Name <input type="text" name="name" placeholder="How should I address you?"></label>
+                    <label>*Email <input type="email" name="email" title="Email" placeholder="eg. you@place.com"
+                            autocomplete="email" required></label>
+                    <label>Alternative contact <input type="text" name="alt-contact"
+                            placeholder="eg. Platform: @yourUsername_"></label>
+                    <label>Reason for Message
+                        <select name="reason">
+                            <option value="" disabled selected>Please select</option>
+                            <option value="commission">I have a commission in mind</option>
+                            <option value="question">I have a question</option>
+                            <option value="problem">Problem with the site</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset id="commission-details" style="display: none">
+                    <legend>Commission Details</legend>
+                    <label>Type of Commission
+                        <select name="cType">
+                            <option value="" disabled selected>Please Select</option>
+                            <option value="D&D">D&D</option>
+                            <option value="Profile">Profile Picture</option>
+                            <option value="Twitch">Twitch</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </label>
+                    <label>If other, please specify <input type="text" name="other-comission"></label>
+                    <label>Number of characters <input type="number" name="numChar"></label>
+                </fieldset>
+                <fieldset id="question-details" style="display: none">
+                    <legend>Question Details</legend>
+                    <label>Question Title <input type="text" maxlength="100" name="qTitle"></label>
+                    <label>Details <textarea name="qDetails"></textarea></label>
+                </fieldset>
+                <fieldset id="problem-details" style="display: none">
+                    <legend>Problem Details</legend>
+                    <label>Where is the Problem?<input type="text" maxlength="100" name="pTitle"></label>
+                    <label>Details <textarea name="pDetails"></textarea></label>
+                </fieldset>
+                <fieldset id="other-details" style="display: none">
+                    <legend>Other Details</legend>
+                    <label>Other Title<input type="text" maxlength="100" name="oTitle"></label>
+                    <label>Details <textarea name="oDetails"></textarea></label>
+                </fieldset>
+                <input id="subButton" type="submit" value="Send Message" style="display: none">
+            </form>
         </div>
 
-        <nav id="mobile-nav">
-            <ul class="nav-container">
-                <li><a href="/wdd231/final/index.html">Home</a></li>
-                <li><a href="/wdd231/final/about.html">About</a></li>
-                <li><a href="/wdd231/final/contact.html" class="active">Contact Me</a></li>
-            </ul>
-        </nav>
-
-        <main>
-            <div class="page-title">
-                <h1>Contact Me</h1>
-                <p>Please use this form if you have questions, or want to make a comission.</p>
-                <p><b>*NOTE: This form is not functional at the moment. Please contact me via Instagram or Email.*</b></p>
-            </div>
-            <div>
-                <form method="get" action="/wdd231/final/thanks.html">
-                    <fieldset>
-                        <legend>Sender Information</legend>
-                        <label>*Name <input type="text" name="name" placeholder="How should I address you?"></label>
-                        <label>*Email <input type="email" name="email" title="Email" placeholder="eg. you@place.com" autocomplete="email" required></label>
-                        <label>Alternative contact <input type="text" name="alt-contact" placeholder="eg. Platform: @yourUsername_"></label>
-                        <label>Reason for Message
-                            <select name="reason">
-                                <option value="" disabled selected>Please select</option>
-                                <option value="commission">I have a commission in mind</option>
-                                <option value="question">I have a question</option>
-                                <option value="problem">Problem with the site</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </label>
-                    </fieldset>
-                    <fieldset id="commission-details" style="display: none">
-                        <legend>Commission Details</legend>
-                        <label>Type of Commission
-                            <select name="cType">
-                                <option value="" disabled selected>Please Select</option>
-                                <option value="D&D">D&D</option>
-                                <option value="Profile">Profile Picture</option>
-                                <option value="Twitch">Twitch</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </label>
-                        <label>If other, please specify <input type="text" name="other-comission"></label>
-                        <label>Number of characters <input type="number" name="numChar"></label>
-                    </fieldset>
-                    <fieldset id="question-details" style="display: none">
-                        <legend>Question Details</legend>
-                        <label>Question Title <input type="text" maxlength="100" name="qTitle"></label>
-                        <label>Details <textarea name="qDetails"></textarea></label>
-                    </fieldset>
-                    <fieldset id="problem-details" style="display: none">
-                        <legend>Problem Details</legend>
-                        <label>Where is the Problem?<input type="text" maxlength="100" name="pTitle"></label>
-                        <label>Details <textarea name="pDetails"></textarea></label>
-                    </fieldset>
-                    <fieldset id="other-details" style="display: none">
-                        <legend>Other Details</legend>
-                        <label>Other Title<input type="text" maxlength="100" name="oTitle"></label>
-                        <label>Details <textarea name="oDetails"></textarea></label>
-                    </fieldset>
-                    <input id="subButton" type="submit" value="Send Message" style="display: none">
-                </form>
-            </div>
-            
-            <div class="right-click-menu">
-                <p>Sorry, right click has been disabled to prevent image theft!<br>Thanks for your understanding.</p>
-            </div>
-        </main>
-        <footer>
-            <p>©<span id="currentyear"></span> 🦕 Talia Olsen 🦕 Canada</p>
-            <p id="lastModified">Last Modified: </p>
-            <p>My Demo Video: <a href="youtube.com">Here</a></p>
-        </footer>
+        <div class="right-click-menu">
+            <p>Sorry, right click has been disabled to prevent image theft!<br>Thanks for your understanding.</p>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🦕 Talia Olsen 🦕 Canada</p>
+        <p id="lastModified">Last Modified: </p>
+        <p>My Demo Video: <a href="youtube.com">Here</a></p>
+    </footer>
 </body>
 
 </html>

@@ -24,6 +24,9 @@
 html {
     background-color: var(--DarkMode);
 }
+html.light{
+    background-color: var(--LightBackground);
+}
 
 p,
 figcaption {
@@ -69,6 +72,28 @@ header img {
 
 #hamburger.open::before {
     content: "❌";
+}
+
+#settings {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    display: block;
+    cursor: pointer;
+
+    transition: all .3s ease-in-out;
+}
+#settings::before{
+    content: "🌕";
+}
+html.light #settings::before {
+    content: "🌑";
+}
+#settings:hover {
+    rotate: 360deg;
 }
 
 nav {

@@ -51,7 +51,7 @@ input[type="submit"] {
     background-color: var(--LightBackground);
     text-align: center;
     border-radius: 50%;
-    width: 60vw;
+    max-width: 60vw;
     height: fit-content;
     padding: 100px;
     margin: 2.5vw auto;

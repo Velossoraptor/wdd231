@@ -16,15 +16,15 @@ const contMenu = document.querySelector(".right-click-menu");
 let imgData = 0;
 const startMode = localStorage.getItem('lightMode');
 
-// document.addEventListener('contextmenu', event => {
-//   event.preventDefault();
-//   contMenu.style.left = event.pageX + 'px';
-//   contMenu.style.top = event.pageY + 'px';
-//   contMenu.style.display = 'block';
-// });
-// document.addEventListener('click', function() {
-//   contMenu.style.display = 'none';
-// });
+document.addEventListener('contextmenu', event => {
+  event.preventDefault();
+  contMenu.style.left = event.pageX + 'px';
+  contMenu.style.top = event.pageY + 'px';
+  contMenu.style.display = 'block';
+});
+document.addEventListener('click', function() {
+  contMenu.style.display = 'none';
+});
 
 if(startMode != null){
     if(startMode == 'true'){
@@ -48,7 +48,7 @@ hamButton.addEventListener('click', () => {
 });
 settingsButton.addEventListener('click', ()=>{
     htmlBG.classList.toggle('light');
-    
+
     if(htmlBG.classList.contains('light')){
         localStorage.setItem('lightMode', 'true');
     }else{

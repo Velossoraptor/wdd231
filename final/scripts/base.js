@@ -56,6 +56,7 @@ settingsButton.addEventListener('click', ()=>{
     }
 });
 
+
 if(gallery != null){
     
     async function getGalleryData(){
